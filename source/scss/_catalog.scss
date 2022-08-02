@@ -1,0 +1,89 @@
+.title {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.catalog {
+    align-content: flex-start;
+}
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-list li {
+    margin-right: 20px;
+    margin-bottom: 23px;
+    padding: 100px 75px;
+    width: 280px;
+    height: 270px;
+}
+.catalog-list a {
+    display: block;
+    font-family: 'Montserrat', 'Arial', sans-serif;    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.catalog-list a:hover,
+.catalog-list a:active {
+    text-decoration-line: underline;
+}
+
+.catalog-list li:nth-child(1) {
+    background: #DBE4DB;    
+    background-image: url('../img/products/image1.png');
+    background-blend-mode: multiply; 
+    background-position: center; 
+    background-repeat: no-repeat;   
+}
+
+.catalog-list li:nth-child(2) {
+    background: #EADDD3;    
+    background-image: url('../img/products/image2.png');
+    background-position: center;
+    background-repeat: no-repeat;     
+}
+.catalog-list li:nth-child(3) {
+    background: #F8F2DA;    
+    background-image: url('../img/products/image3.png');
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.catalog-list li:nth-child(4) {
+    background: #D5D4E1; 
+    background-image: url('../img/products/image4.png');
+    background-position: center;
+    background-repeat: no-repeat;  
+    margin-left: 150px; 
+}
+.catalog-list li:nth-child(5) {
+    background: #F3D0DB; 
+    background-image: url('../img/products/image5.png');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+.catalog-list li:nth-child(6) {
+    background: #E5EAF8;     
+    background-image: url('../img/products/image6.png');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.product {
+    width: 70%;    
+    padding-left: 140px;    
+    margin-top: -22px;
+    margin-bottom: 55px;
+}

@@ -1,15 +1,12 @@
 @import "_variables.base";
 @import "_mixins";
 
-/*
-  Import vendor libraries
-*/
-@import "vendor/_normalize";
+
+
 
 /*
   Import utils classes and base styles
 */
-@import "_utils";
 @import "_base";
 
 /*
@@ -17,6 +14,13 @@
 */
 @import "_blocks/container";
 @import "_blocks/footer";
+@import "_blocks/header";
+@import "_blocks/products";
+@import "_toys";
+@import "_contact";
+@import "_catalog";
+@import "_blog";
+
 
 /*
   Ниже пример подключения других блоков
@@ -35,26 +39,391 @@
   то он должен был бы быть в файле _blocks/coming-soon.scss
 */
 
-.coming-soon {
-  color: $color-text;
+
+
+/* banner */
+
+.banner {
+  position: relative;
+  background: #EEE4DB;
+  padding: 89px 0px;
+  margin-top: 124px;
+}
+
+.banner-wrapper {
+  margin-left: 133px;
+}
+
+.banner img {
+  position: absolute;
+  top: -88px;
+  right: 100px;
+}
+
+.banner-title {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  color: #1E0606;
+  margin: 0px;
+  width: 30%;
+}
+
+.banner-text {
+  font-family: 'Crimson Text', 'Arial', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1E0606;
+}
+
+.text {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  height: 39px;
+  background: #C29974;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  min-height: calc(100vh - 100px);
-  margin: auto;
-  padding: 0 5vw;
-
-  &__title {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 25vw;
-    font-weight: 400;
-    margin: 0 auto;
-    text-transform: uppercase;
-    width: 100%;
-  }
+  width: 1180px;
 }
+
+.numbers {
+  position: absolute;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 73px;
+  opacity: 5%;
+  top: 17px;
+  left: 28px;
+}
+
+.banner-buttons {
+
+  color: #D6CAC2;
+  position: absolute;
+  top: 101px;
+  left: 31px;
+}
+
+.banner-button-one {
+  width: 31px;
+  height: 3px;
+  background: #725F5B;
+  margin-bottom: 11px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+
+.banner-button {
+  width: 31px;
+  height: 3px;
+  background: #D6CAC2;
+  margin-bottom: 11px;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-button:hover {
+  background: #725F5B;
+}
+
+
+.banner-buttons button {
+  display: block;
+}
+
+
+/* products */
+
+.products-title {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;    
+  margin: 0 -10px;     
+}
+
+.products-cards a {
+  display: block;
+  font-family: 'Montserrat', 'Arial', sans-serif; 
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.products-cards:hover,
+.products-cards:active {
+  text-decoration-line: underline;
+}
+
+
+.products-cards {
+ width: 280px;  
+}
+
+
+
+.products-cards:nth-child(1) {
+  background: #DBE4DB;
+  padding: 100px 75px;
+  background-image: url('../img/products/image1.png');
+  background-blend-mode: multiply; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  margin-left: 12px;  
+  margin-top: 2px; 
+}
+
+.products-cards:nth-child(2) {
+  background: #EADDD3;
+  padding: 100px 75px;
+  background-image: url('../img/products/image2.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  margin-left: 18px;  
+  margin-top: 2px ;        
+}
+
+.products-cards:nth-child(3) {
+  background: #F8F2DA;
+  padding: 119px 75px;
+  background-image: url('../img/products/image3.png');
+  background-position: center;
+  background-repeat: no-repeat;   
+  margin-left: 21px;      
+}
+
+  
+.products-cards:nth-child(4) {
+  background: #D5D4E1;
+  padding: 118px 40px;
+  background-image: url('../img/products/image4.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  margin-left: 20px;   
+} 
+
+.products-list button {   
+  padding: 17px;   
+  margin: 37px 0px 99px 11px;
+  border: none;
+  cursor: pointer; 
+}
+
+.button-control-one { 
+  background: #E2F1F8;         
+  background-image: url('../img/vector1.png');
+  background-position: center;
+  background-repeat: no-repeat;     
+}
+
+.button-control-two {
+  background: #E2F1F8;     
+  background-image: url('../img/vector2.png');
+  background-position: center;
+  background-repeat: no-repeat;    
+}
+
+.products-list p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  margin-top: 32px;
+  margin-left: 22px;
+  margin-bottom: 90px;
+  height: 100%;
+  width: 45%;
+}
+
+/* delivery */
+
+.delivery {
+  display: flex;  
+  justify-content: flex-start;  
+  margin-bottom: 90px;
+}
+
+.delivery-image {
+  width: 480px;
+  margin-right: 120px;
+  margin-top: -4px;
+  background: #7D97DA33;
+  
+}
+
+.delivery-title {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+  margin: 27px 0 15px 2px;
+}
+
+.delivery-link {
+  font-weight: 700;
+  position: relative;
+}
+
+.delivery-link::after {
+  content: '';
+  position: absolute;
+  width: 326px;
+  height: 55px;
+  left: -60px;
+  top: -11px;
+  background: rgba(112, 187, 220, 0.2);
+}
+
+.delivery-links {
+  padding: 0 0;
+  margin: 0 0;
+  width: 480px;
+}
+
+.delivery-links li {
+  font-family: 'Crimson Text', 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  color: #1E0606;
+  margin-bottom: 22px;
+}
+
+.delivery-links li:first-child { 
+  font-weight: 700;
+}
+
+.delivery-text {
+  margin-bottom: 22px;
+  margin-top: 27px;
+  width: 82%;
+}
+
+.delivery-texts {
+  margin-top: -6px;
+  margin-bottom: 36px;
+  margin-left: 1px;
+  width: 82%;
+}
+
+.delivery-list .button {
+  width: max-content;
+  
+}
+
+/* company */
+
+.company {
+  margin-bottom: 128px;
+}
+
+.company-title {
+ font-size: 0;
+ width: 0;
+ height: 0;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-image {
+margin-top: 8px;
+}
+
+.company-images {
+  margin-top: 10px;
+}
+
+
+/* information */
+
+.information {
+  display: flex;    
+  align-items: flex-start;
+  margin-bottom: 151px;
+}
+
+.information-about {
+  background: #E1F0F7;
+  padding: 0 30px 30px;
+  width: 543px;
+  margin-top: 20px;
+}
+
+.information-about:first-child {
+  margin-right: 57px;
+}
+
+.information-title,
+.about-title {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;       
+  text-transform: uppercase;    
+  color: #1E0606;
+  margin-top: -25px;
+}
+
+.information-about {
+  margin: -20px 0 10px;
+}
+
+.information-list {
+  font-family: 'Crimson Text', 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;    
+  color: #1E0606; 
+  margin-top: -23px;   
+}
+
+.information-text {
+  margin-top: -14px;
+  margin-bottom: 31px;    
+}
+
+.about-text {
+  margin-top: -11px;
+  margin-bottom: 31px;
+}
+
+.map {    
+  width: 483px;
+  height: 196px;
+  margin-bottom: -143px;
+  border: 0px;
+}
+

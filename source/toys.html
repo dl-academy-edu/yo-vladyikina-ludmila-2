@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Toys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap"
+		rel="stylesheet">   
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <section class="toys container">
+            <h1 class="title">Toy for kids</h1>
+            <div class="breadcrumbs">                
+                <a class="breadcrumbs-next" href="/">Home</a>
+                <a class="breadcrumbs-next" href="catalog.html">Catalog</a>
+                <p class="breadcrumbs-disable">Toys</p>
+            </div>
+        </section>
+            
+        <section class="choice">
+            <div class="container">
+                <div class="choice-wrapper underline">
+                    <div class="choice-cost">
+                        <h2>Cost</h2>                       
+                        <div class="cost-number">
+                            <p class="cost-circle">0</p>
+                            <p>500</p>
+                        </div>
+                     </div>                 
+                     <fieldset class="color">                        
+                        <legend>Color</legend>
+                        <ul class="color-link underline">
+                            <li>
+                                <input type="checkbox" id="input-black" class="checkbox-input" checked>
+                                <label for="input-black" class="checkbox-label">Black</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="input-blue" class="checkbox-input">
+                                <label for="input-blue"  class="checkbox-label">Blue</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="input-green" class="checkbox-input">
+                                <label for="input-green"  class="checkbox-label">Green</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="input-white" class="checkbox-input">
+                                <label for="input-white"  class="checkbox-label">White</label>
+                            </li>
+                        </ul>                        
+                    </fieldset> 
+                    <fieldset class="delivery">                        
+                        <legend>Delivery</legend>
+                        <ul class="delivery-choice underline">
+                            <li>
+                                <input type="radio" id="input-free" name="shipping" class="radio-input" checked>
+                                <label for="input-free" class="radio-label">Free shipping</label>
+        
+                            </li>
+                            <li>
+                                <input type="radio" id="input-fast" name="shipping" class="radio-input">
+                                <label for="input-fast" class="radio-label">Fast shipping</label>
+                            </li>
+                        </ul>                        
+                    </fieldset>  
+                     <fieldset class="amount">                        
+                            <legend>Amount</legend>
+                            <ul class="amount-link underline">
+                                <li>
+                                    <input type="radio" id="input-0-5" name="meaning" class="radio-input" checked>
+                                    <label for="input-0-5" class="radio-label number1">0-5</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="input-10-20" name="meaning" class="radio-input">
+                                    <label for="input-10-20" class="radio-label number2">10-20</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="input-20-50" name="meaning" class="radio-input">
+                                    <label for="input-20-50" class="radio-label number3">20-50</label>
+                                </li>
+                            </ul>                        
+                     </fieldset>            
+                              
+                                                           
+                    <button class="button" type="submit">Apply</button>
+                </div>
+            </div>            
+           
+        </section>
+        <section class="toys-wrapper container"> 
+            <h2 class="toys-title">Toys-group</h2>           
+            <ul class="toys-link underline">
+                <li class="toys-group">
+                    <a href="#">
+                        <img src="img/toys/toys1.png" alt="SHARKY BEAN BAG CHAIR COVER" width="380" height="385">
+                        <span>SHARKY BEAN BAG CHAIR COVER</span>
+                        <p>$60.00 USD</p>
+                    </a>
+                </li>
+                <li class="toys-group">
+                    <a href="#">
+                        <img src="img/toys/toys2.png" alt="BRASS DECO FRAMES" width="380" height="385">
+                        <span>BRASS DECO FRAMES</span>
+                        <p>$66.00 USD</p>
+                    </a>
+                </li>
+                <li class="toys-group">
+                    <a href="#">
+                        <img src="img/toys/toys3.png" alt="CIBO FULL APRON" width="380" height="385">
+                        <span>CIBO FULL APRON</span>
+                        <p>$60.00 USD</p>
+                    </a>
+                </li>
+                <li class="toys-group">
+                    <a href="#">
+                        <img src="img/toys/toys4.png" alt="GATCHA GATCHA GUMBALL MACHINE" width="380" height="385">
+                        <span>GATCHA GATCHA GUMBALL MACHINE</span>
+                        <p>$56.00 USD</p>
+                    </a>
+                </li>
+                <li class="toys-group">
+                    <a href="#">
+                        <img src="img/toys/toys5.png" alt="CHRISTMAS ADVENT SCENTED CANDLE" width="380" height="385">
+                        <span>CHRISTMAS ADVENT SCENTED CANDLE</span>
+                        <p>$29.00 USD</p>
+                    </a>
+                </li>
+                <li class="toys-group">
+                    <a href="#">
+                        <img src="img/toys/toys6.png" alt="TANGLE SPINNING TEA LIGHT" width="380" height="385">
+                        <span>TANGLE SPINNING TEA LIGHT</span>
+                        <p>$56.00 USD</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <div class="pages-wrapper container">
+            <a class="pagination-vector-left" href="#"></a>
+            <div class="pages">
+                <ul class="pages-link underline">                
+                    <li>
+                        <a class="pager-one" href="#">1</a>
+                    </li>
+                    <li>
+                        <a class="pager-next" href="#">2</a>
+                    </li>
+                    <li>
+                        <a class="pager-next" href="#">3</a>
+                    </li>
+                    <li>
+                        <a class="pager-next" href="#">4</a>
+                    </li>               
+                </ul>
+            </div>            
+            <a class="pagination-vector-right" href="#"></a>
+        </div>
+    </main>
+    @@include('blocks/footer.html') 
+</body>
+</html>

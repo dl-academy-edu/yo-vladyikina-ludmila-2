@@ -1,10 +1,258 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
-.footer {
-  background-color: #151515;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  height: 100px;
+/* footer */
+
+
+footer {       
+  background: #434343; 
+  width: 1400px; 
+  margin: 0 auto; 
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;  
+  padding-bottom: 19px;    
+  border-bottom : 1px solid #666666;  
+  margin-top: 63px;           
+}
+
+.footer-link {
+  margin-top: 22px;  
+}
+
+.footer-company {
+  display: flex;   
+     
+}
+
+.footer-company li {
+  margin: 1px 4px;
+}
+
+.footer-company li:hover {
+  opacity: 0.5;
+}
+
+.footer-company li:active {
+  opacity: 0.2;
+}
+
+
+.footer-link li:hover {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.footer-link li:active {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+
+/* ratting */
+
+.footer-rating {
+  display: flex;
+  justify-content: start;  
+}
+ 
+
+.footer-star {
+  display: flex;     
+  margin-top: 60px;      
+  padding-left: 70px;
+  margin-left: 40px;
+  
+}
+
+.rating-company {
+  font-size: 16px;
+  line-height: 22px;     
+  color: #FFFFFF;
+  margin-top: 23px;   
+}
+
+.rating-company:hover {
+  color:#836E5B;
+}
+
+.rating-company:active {
+  color:#C29974;
+}
+
+.simple-rating {
+  position: relative;
+  font-size: 23px;
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 100px; 
+ 
+}
+
+.simple-rating::before {      
+  background: repeat;
+  content: "★★★★★";
+  display: block;
+  margin-top: 25px; 
+      
+}
+
+.simple-rating-items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;   
+     
+} 
+
+
+.simple-rating-item {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  
+}
+
+.simple-rating-label {
+  flex: 0 0 20%;
+  height: 100%;  
+  font-size: 23px; 
+  cursor: pointer;    
+  color: #FFFFFF;
+  margin-top: 25px;    
+}
+
+.simple-rating-label::before {
+  content: '★';
+  display: block;  
+ 
+}
+
+.simple-rating-item:checked,
+.simple-rating-item:checked ~ .simple-rating-label {
+ color: #C29974; 
+
+}
+
+.simple-rating-label:hover,
+.simple-rating-label:hover ~ .simple-rating-label,
+.simple-rating-label:checked ~ .simple-rating-label:hover {
+  color:#836E5B;  
+}
+
+footer .copyright {
+ margin-right: 10px;    
+ margin-left: 170px; 
+}
+
+
+footer .header {
+  color: #AAAAAA;     
+  font-weight: 400;   
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 99px
+}
+
+.footer a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+
+.footer span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 24px;
+  margin-left: 155px;
+}
+
+.footer-rating a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;      
+  color: #A2A2A2;  
+  margin-top: 23px;
+  margin-left: 31px;  
+} 
+
+footer .title-border {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #666666;
+  width: 380px;    
+}
+
+.footer-form {
+  display: flex;
+  margin: 25px 0;
+}
+
+.footer-form {
+  background:#666666;
+  width: 379px;
+  height: 40px;
+}
+
+.email {
+  background:#666666;
+  border: 1px solid #666666;
+  width: 299px;
+  height: 40px;  
+  color: #EBEBEB;  
+  padding-left: 14px;
+  padding-top: 7px;
+}
+
+.email::-webkit-input-placeholder { 
+  color: #EBEBEB; 
+}
+
+.email:hover,
+.email:active {
+  border: 1px solid #FFFDFD;
+  background: #666666;
+}
+
+
+footer .button-submit {
+  display: flex;
+  align-items: center;
+  background: #000000;
+  color: #FFFFFF;     
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 9px 22px;
+  cursor: pointer;
+  border: none;
+  margin-left: 1px;
+}
+
+footer .button-submit:hover {
+  background: #C29974;
+  border: none;
+}
+
+footer .button-submit:active {
+  background: #CFAF91;
+}
+
+footer .button-submit:disabled {
+  background: #C7C1C1;
+}
+
+.footer-star:hover,
+.footer-star:active 
+{
+  color: #FFFFFF;
 }

@@ -1,23 +1,226 @@
-html {
-  box-sizing: border-box;
-  text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent;
+* {
+    box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html,
 body {
-  background-color: $color-bg;
-  color: $color-text;
-  font-family: $font-base-family;
-  height: 100%;
-  margin: 0;
-  min-height: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
 }
+
+a {
+    text-decoration: none;
+}
+
+.underline {
+    list-style-type: none;
+}
+
+
+.underline {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    background: #000000;
+    color: #FFFFFF;
+    font-weight: 700; 
+    font-size: 16px;
+    line-height: 22px;   
+    text-transform: uppercase;
+    border: none;    
+    cursor: pointer;
+    padding: 9px 22px 9px 22px;    
+}
+
+.button:hover {
+    background: #C29974;
+}
+
+.button:active {
+    background: #CFAF91;
+}
+
+.button:active {
+    background: #C7C1C1;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+       
+}
+
+.breadcrumbs-next,
+.breadcrumbs-disable {
+    font-family: 'Crimson Text','Arial', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px; 
+    color: #1E0606;   
+}
+
+.breadcrumbs a {
+    margin-right: 48px;
+}
+
+.breadcrumbs p {
+   margin: 0;
+}
+
+.breadcrumbs-next::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    margin-left: 22px;
+    top: 7px;   
+    background-image: url('../img/breadcrumbs.png');    
+    background-position: center; 
+    background-repeat: no-repeat;      
+}
+
+.breadcrumbs-disable { 
+    text-transform: capitalize; 
+    cursor: pointer;
+    opacity: .5;
+}
+
+/* pages */
+
+.pages-wrapper {
+    margin-top: 30px;
+    margin-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.pages-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pager-next, .pager-one {
+    font-family: 'Montserrat', 'Arial', sans-serif;    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;  
+    text-transform: uppercase; 
+    color: #1E0606;    
+}
+
+.pages-link a {
+    padding: 0px 32px;
+}
+
+.pager-one {
+    color: #C29974;     
+}
+
+.pages-link:active {
+    color: #C29974;    
+}
+
+.pages-link a:hover {
+    color: #AAAAAA;
+    cursor: pointer;
+}
+
+
+
+/* vector */
+
+.pagination-vector-left, 
+.pagination-vector-right {    
+    background-image: url('../img/vector-left.svg');    
+    background-repeat: repeat;
+    background-position: center;  
+    display: block;
+    top: 0;
+    right: 0;
+    width: 17px;
+    height: 30px;   
+}   
+
+.pagination-vector-right {
+    background-image: url('../img/vector-right.svg');
+}
+
+.pagination-vector-left:hover{
+    background-image: url('../img/vector-hover.svg');  
+    transform: matrix(-1, 0, 0, 1, 0, 0); 
+}
+
+.pagination-vector-left:active{
+    background-image: url('../img/vector-active.svg');  
+    transform: matrix(-1, 0, 0, 1, 0, 0); 
+    opacity: 0.7;
+}
+.pagination-vector-right:hover {
+    background-image: url('../img/vector-hover.svg');   
+    
+}
+.pagination-vector-right:active {
+    background-image: url('../img/vector-active.svg');   
+    opacity: 0.7;
+}
+
+
+/* popup */
+
+.popup {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(125, 151, 218, 0.8);
+    bottom: 0;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-open {
+    display: flex;
+}
+
+.popup-form {
+    width: 680px;
+    background: #E5EAF8;
+    padding: 50px;
+    position: relative;
+    margin-right: 120px;
+    margin-bottom: 60px;
+}
+
+.popup-close {
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer; 
+    background: #E5EAF8;
+    transform: rotate(90deg);    
+}
+
+.popup-close:hover {
+    background: rgba(240, 240, 240, 0.7);
+    transform: rotate(90deg);
+}
+
+.popup-close:active {
+background: rgba(240, 240, 240, 0.4);
+transform: rotate(90deg) 
+} 
+

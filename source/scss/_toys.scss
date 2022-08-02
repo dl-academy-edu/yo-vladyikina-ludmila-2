@@ -1,0 +1,362 @@
+.title {
+    font-family: 'Montserrat', 'Arial', sans-serif;    
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;    
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-top: 56px;
+    margin-bottom: 14px;
+}
+
+.toys .breadcrumbs {
+    margin-bottom: 51px;
+    margin-left: 2px;
+}
+
+
+
+/* choice */
+
+.choice {
+    background: #7D97DA33;  
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.choice-wrapper {   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+    padding: 40px 85px 27px 0px;
+    margin-bottom: -22px;
+}  
+
+.choice-wrapper legend,
+.choice-cost h2 {
+    font-family: 'Montserrat', 'Arial', sans-serif;   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;  
+    color: #1E0606; 
+    margin-bottom: 14px;    
+}
+
+.choice-cost {
+    margin-top: -13px;
+    width: 207px; 
+    margin-right: 36px;
+}
+
+.cost-number {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: relative;
+}
+
+.cost-number::before {
+    content: '';
+    display: block;
+    width: 188px;
+    height: 4px;
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    background: #72757C;
+}
+
+.cost-number::after {
+    content: '';
+    display: block;
+    width: 46px;
+    height: 4px;
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    background: #C29974;
+}
+
+.cost-circle {
+    position: relative;
+}
+
+.cost-circle::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -31px;
+    left: 40px;
+    background: #C29974;
+    border-radius: 60px;
+}
+
+.cost-circle::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: -23px;
+    left: 48px;
+    background: #FFFFFF;
+    border-radius: 60px;
+    z-index: 1;
+}
+
+.cost-circle:hover,
+.cost-circle:active {
+    cursor: pointer;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset li {
+    margin-bottom: 15px;
+}
+
+.color {
+    width: 85px;
+    margin-right: 58px;
+}
+
+.delivery {
+    margin-right: 7px;
+}
+
+.checkbox-input,
+.radio-input {
+    display: none;    
+}
+
+.checkbox-label,
+.radio-label {
+    position: relative;
+    cursor: pointer;      
+}
+
+.checkbox-label {
+    padding-left: 30px;   
+}
+
+.radio-label {
+    padding-left: 36px;   
+}
+
+
+.checkbox-label::before,
+.checkbox-label::after,
+.radio-label::before,
+.radio-label::after,
+.amount .radio-label::before,
+.amount .radio-label::after {
+    content:'';
+    position: absolute;
+    display: block;   
+}
+
+
+.checkbox-label::before {   
+    width: 19px;
+    height: 19px;     
+    border: 2px solid #C29974;
+    background: #FFFFFF;
+    border-radius: 3px; 
+    top: 0;
+    left: 0;
+}
+
+.checkbox-label::after {
+    width: 14px;
+    height: 14px;     
+    background-image: url('../img/checkbox.svg'); 
+    top: 2px;
+    left: 4px;
+    opacity: 0;
+} 
+
+.checkbox-input:checked + .checkbox-label::after {
+    opacity: 1;
+}
+
+.radio-label::before { 
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 2px solid #C29974;
+    border-radius: 50%;    
+    top: 0;
+    left: 0;
+} 
+
+.radio-label::after {
+    width: 12px;
+    height: 12px;
+    background: #C29974;
+    border: 2px solid #C29974;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    opacity: 0;
+}
+.radio-input:checked + .radio-label::after {
+    opacity: 1;
+}
+
+.amount .radio-label {
+    position: relative;
+    cursor: pointer;       
+    z-index: 1;  
+}
+
+.amount .radio-label::before,
+.amount .radio-label::after {
+    width: 76px;
+    height: 30px;
+    border-radius: 3px;    
+    top: 0;
+    left: 0;     
+    z-index: -1;
+}
+
+.amount .radio-label::before {
+    background: #FFFFFF;   
+    border: 2px solid #FFFFFF;   
+    
+}
+.amount .radio-label::after {
+    background: #F3D0DB;  
+    border: 2px solid #F3D0DB;
+    border-radius: 3px;      
+    opacity: 0;     
+}
+
+.amount .radio-input:checked + .amount .radio-label::after {
+    opacity: 1;
+}
+
+.checkbox-label:hover,
+.checkbox-label:active,
+.radio-label:hover,
+.radio-label:active {
+    text-decoration-line: underline;    
+    color: #1E0606;
+}
+
+.checkbox-input:disabled + .checkbox-label,
+.radio-input:disabled + .radio-label,
+.checkbox-input:disabled + .checkbox-label::before,
+.radio-input:disabled + .radio-label::before {
+    color: #908484;   
+    text-decoration-line: none;  
+}
+
+.amount .radio-label:hover {
+    background: #F3D0DB;
+    text-decoration-line: none; 
+    opacity: 0.5;
+}
+
+.amount .number1 {
+    padding: 7px 28px 6px 28px;    
+}
+
+.amount .number2,
+.amount .number3 {
+    padding: 7px 19px 6px 19px;
+}
+
+.amount-link {
+    display: flex;  
+    margin-top: 10px;    
+}
+
+.button {
+    margin-top: 33px;
+}
+
+
+
+
+/* toys */
+
+.toys-link {
+    display: flex;  
+    flex-wrap: wrap;
+    margin-top: 83px;
+   
+}
+
+.toys-title {
+    font-size: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.toys-link li {
+    width: 380px;  
+    margin-right: 20px;
+    margin-bottom: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.toys-link li:nth-child(3n) {
+    margin-right: -10px;
+}
+
+.toys-link span {    
+    font-size: 14px;
+    line-height: 69px;    
+    color: #1E0606;   
+    }
+
+.toys-link p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;    
+    color: #1E0606;
+    margin-top: -8px;
+}
+    
+.toys-group {
+    position: relative;
+}
+
+
+.toys-group a::after {
+    position: absolute;
+    content: 'LEARN MORE';
+    width: 207px;
+    height: 207px;
+    background: #E5EAF8;
+    top: 90px;
+    left: 85px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    color: #1E0606;
+    display: none;
+}
+
+.toys-group a:hover::after {
+    opacity: 0.9;
+    display: flex;
+}
+
+.toys-group a:active::after {
+    display: flex;
+    background: #E5EAF8;
+    opacity: 0.67;
+}
