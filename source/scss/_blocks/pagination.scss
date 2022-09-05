@@ -1,0 +1,65 @@
+/* pagination */
+
+.pagination-wrapper {
+    margin-top: 30px;
+    margin-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.pagination-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages-link {
+    font-family: 'Montserrat', 'Arial', sans-serif;    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;  
+    text-transform: uppercase; 
+    padding: 0px 32px;
+    color: #1E0606;
+    transition: .4s;
+    
+} 
+
+.pages-link:active {
+    opacity: 0.2;;    
+}
+
+.pages-link a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.pages-list .active {
+    color: #C29974;
+}
+
+.pagination-prev {
+    transform: rotate(-180deg);
+}
+
+.prev {
+    padding-left: 20px;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    fill:#E4E1E1;
+}
+
+.prev:hover {
+    transition: .4s;
+    fill:#C29974;
+}
+
+.prev:active {
+    transition: .4s;
+    opacity: 0.5;
+}
+
+.next {
+    @extend .prev
+}

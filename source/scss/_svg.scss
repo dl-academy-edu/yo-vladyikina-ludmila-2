@@ -1,0 +1,44 @@
+.svg-title{
+    font-family: 'Montserrat', 'Arial', sans-serif;    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase; 
+    color: #1E0606;    
+}
+
+.svg-icon {
+    margin-top: 38px;
+    margin-bottom: 60px;
+}
+
+@keyframes line {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+ 
+.svg {    
+    stroke-dasharray: 175;
+    stroke-dashoffset: 700;
+    animation: line 7s linear forwards;
+    animation-iteration-count:infinite;
+}
+ 
+@keyframes sun {
+    10% {
+        transform: translate(0px, 0px);
+    }
+    60% {
+        transform: translate(50px, 40px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+  
+.svg-sun {
+    animation: sun 7s linear infinite;
+}  
+
+      

@@ -16,10 +16,14 @@
 @import "_blocks/footer";
 @import "_blocks/header";
 @import "_blocks/products";
+@import "_blocks/star";
+@import "_blocks/pagination";
 @import "_toys";
 @import "_contact";
 @import "_catalog";
 @import "_blog";
+@import "_animation";
+@import "_svg";
 
 
 /*
@@ -289,6 +293,7 @@
 
 .delivery-link {
   font-weight: 700;
+  color: #1E0606; 
   position: relative;
 }
 
@@ -318,8 +323,9 @@
   margin-bottom: 22px;
 }
 
-.delivery-links li:first-child { 
-  font-weight: 700;
+.delivery-links li:first-child {   
+  font-weight: 700; 
+  color: #1E0606; 
 }
 
 .delivery-text {

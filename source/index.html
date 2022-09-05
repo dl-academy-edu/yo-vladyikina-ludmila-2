@@ -68,28 +68,28 @@
                         furniture for kids and adults.</p>
                 </div>             
             </section>
-        <section class="delivery">                      
-            <img class="delivery-image" src="img/woman.jpg" alt="woman" width="480" height="559">                                 
-            <div class="delivery-list">   
-                <h2 class="delivery-title">Delivery</h2>                
-                <ul class="delivery-links underline">
-                    <li>
-                        <a class="delivery-link" href="#">Delivery</a>
-                    </li>
-                    <li>
-                        <a href="#">Guarantee</a>
-                    </li>
-                    <li>
-                        <a href="#">Credit</a>
-                    </li>
-                </ul>           
-                <p class="delivery-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
-                    completely shocked that four years have flown by. It's simply magical.</p>
-                <p class="delivery-texts">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
-                    place for me and i have you and all of the beautiful designers that we work with to thank!</p>                             
-                <a href="#" class="button">LEARN MORE</a> 
-            </div>                           
-        </section>
+            <section class="delivery">                      
+                <img class="delivery-image" src="img/woman.jpg" alt="woman" width="480" height="559">                                 
+                <div class="delivery-list">   
+                    <h2 class="delivery-title">Delivery</h2>                
+                    <ul class="delivery-links underline">
+                        <li>
+                            <a class="delivery-link" href="#">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#">Guarantee</a>
+                        </li>
+                        <li>
+                            <a href="#">Credit</a>
+                        </li>
+                    </ul>           
+                    <p class="delivery-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
+                        completely shocked that four years have flown by. It's simply magical.</p>
+                    <p class="delivery-texts">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
+                        place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                    <a href="#" class="button">LEARN MORE</a>                 
+                </div>                           
+            </section>
         <section class="company">            
             <h2 class="company-title">Company</h2>
             <ul class="company-list underline">
@@ -113,12 +113,8 @@
                     <h2 class="information-title">Design Life Kids</h2>
                     <p class="information-list">About Us</p>
                     <p class="information-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
-                        completely shocked that four years have flown by. It's simply magical. </p>
-                    @@include('blocks/button.html', {
-                        "link": "#",
-                        "text": "buy now",
-                        "class": ""
-                    })
+                        completely shocked that four years have flown by. It's simply magical. </p> 
+                    <a href="#" class="button">buy now</a>                  
                 </div>
                 <div class="information-about">                    
                     <h2 class="about-title">Contacts</h2>
@@ -133,40 +129,38 @@
     @@include('blocks/footer.html')   
     <section class="popup">
         <h2>Window Model</h2>
-        <form class="popup-form" action="#">
+        <form class="popup-form" action="index.html">
             <div class="label-wrapper">
-                <label for="input-name">Name</label>
-                <input type="text" id="input-name" placeholder="Ivan Ivanov">
+                <label for="input-name" class="label-name" >Name</label>
+                <input type="text" id="input-name" class="input-name" placeholder="Ivan Ivanov">
             </div>
             <div class="field-2-column">
                 <div class="label-wrapper-phone">
-                    <label for="input-phone">Phone</label>
-                    <input type="tel" id="input-phone">
+                    <label for="input-phone" class="label-phone">Phone</label>
+                    <input type="tel" id="input-phone" class="input-phone">
                 </div>
                 <div class="label-wrapper">
-                    <label for="input-email">Email</label>
-                    <input type="email" id="input-email">
+                    <label for="input-email" class="label-email">Email</label>
+                    <input type="email" id="input-email" class="input-email">
                 </div>
             </div>
             <div class="label-wrapper">
-                <label for="textarea">Message</label>
-                <textarea name="#" id="textarea" cols="60" rows="15"></textarea>
+                <label for="textarea" Class="label-message">Message</label>
+                <textarea name="#" id="textarea" cols="30" rows="10" class="input-message"></textarea>
             </div>
             <div>
-                <label class="label-wrapper-consent">
+                <label class="label-wrapper consent">
                     <input type="checkbox" class="checkbox-input" checked>
                     <span class="checkbox-label">By clicking on the button, you consent to the processing of your personal data</span>
                 </label>
             </div>
-            <button class="button" type="submit">Submit</button>   
+            <button class="button" type="submit">Submit</button>
             <button class="popup-close">
                 <svg aria-label="close-btn" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
+                    <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
                 </svg>
-            </button>
-                                          
-        </form>
-        
+        </button>
+        </form>        
     </section>
     <script src="js/app.js"></script>
 </body>

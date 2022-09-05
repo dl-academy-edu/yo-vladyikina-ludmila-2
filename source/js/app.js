@@ -1,7 +1,3 @@
-window.addEventListener('DOMContentLoaded', function () {
-
-});
-
 
 var popup = document.querySelector('.popup');
 var popupBtn = document.querySelector('.banner-js');
