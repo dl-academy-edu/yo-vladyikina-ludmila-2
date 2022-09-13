@@ -1,8 +1,8 @@
 <footer class="footer">
-    <div class="footer-row container">
-        <div class="footer-menu container">
-            <p class="footer-title">Navigation</p>
-            <ul class="underline footer-content">
+    <div class="footer__row container">
+        <div class="footer__menu container">
+            <p class="footer__title">Navigation</p>
+            <ul class="underline footer__content">
                 <li>
                     <a href="#">About Us</a>
                 </li>
@@ -23,9 +23,9 @@
                 </li>
             </ul>
         </div>
-        <div class="footer-menu">
-            <p class="footer-title">Customer Information</p>
-            <ul class="underline footer-content">
+        <div class="footer__menu">
+            <p class="footer__title">Customer Information</p>
+            <ul class="underline footer__content">
                 <li>
                     <a href="#">Contact Us</a>
                 </li>
@@ -46,14 +46,19 @@
                 </li>
             </ul>
         </div>
-        <div class="footer-menu">
-            <p class="footer-title">Connect</p>
-            <form class="footer-form">
+        <div class="footer__menu">
+            <p class="footer__title">Connect</p>
+            <form class="footer__form">
                 <label for="email"></label>
                 <input type="email" id="email" name="email" class="email" placeholder="Email">
-                <button class="footer-button" type="submit">join</button>
+                @@include('blocks/button.html', {
+                    "class": "footer__button button",
+                    "type": "submit",
+                    "text": "join"
+                })
+                
             </form>
-            <ul class="underline inline">
+            <ul class="underline inline footer__content">
                 <li>
                     <a href="#">
                         <svg aria-label="facebook" width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -109,10 +114,10 @@
             </ul>
         </div>
     </div>
-    <section class="footer-information container">        
+    <section class="footer__information container">        
         <div class="company-rating"> 
-            <p class="company-rating-text">Company Rating</p> 
-            <form class="company-rating-star">         
+            <p class="company-rating__text">Company Rating</p> 
+            <form class="company-rating__star">         
                 <input type="radio" id="star-5" name="rating" value="5">
                 <label for="star-5">
                     @@include('blocks/star.html')
@@ -135,8 +140,8 @@
                 </label>            
             </form>           
         </div>
-        <p class="footer-information-copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-        <a class="footer-information-web-design-link" href="#">Web Design — Direct Line Development</a>        
+        <p class="footer__information__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+        <a class="footer__information__web-design-link" href="#">Web Design — Direct Line Development</a>        
     </section>  
 
 </footer>

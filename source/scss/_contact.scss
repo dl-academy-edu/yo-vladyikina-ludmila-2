@@ -12,6 +12,7 @@
 .contact-wrapper{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .form-contact {      
@@ -218,4 +219,8 @@ input {
 
 .button:disabled {
     background: #C7C1C1;
+}
+
+.contact .breadcrumbs-next-2 {
+    display: none;
 }

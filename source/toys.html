@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Toys</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +20,11 @@
     <main>
         <section class="toys container">
             <h1 class="title">Toy for kids</h1>
-            <div class="breadcrumbs">                
-                <a class="breadcrumbs-next" href="/">Home</a>
-                <a class="breadcrumbs-next" href="catalog.html">Catalog</a>
-                <p class="breadcrumbs-disable">Toys</p>
-            </div>
+            @@include('blocks/breadcrumbs.html', {
+                "link": "catalog.html",
+                "text": "Catalog",
+                "text-2": "Toys"
+            })            
         </section>
             
         <section class="choice">
@@ -89,8 +90,12 @@
                             </ul>                        
                      </fieldset>            
                               
-                                                           
-                    <button class="button" type="submit">Apply</button>
+                    @@include('blocks/button.html', {
+                        "class": "button",
+                        "type": "submit",
+                        "text": "Apply"
+                    })                                      
+                    
                 </div>
             </div>            
            

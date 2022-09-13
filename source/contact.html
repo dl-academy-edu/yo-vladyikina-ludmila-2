@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +18,13 @@
 <body>
     @@include('blocks/header.html')
     <main class="container">
-        <section>
+        <section class="contact">
             <h1 class="title">Contact Us</h1>
-            <div class="breadcrumbs">
-                <a class="breadcrumbs-next" href="index.html">Home</a>
-                <p class="breadcrumbs-disable">Contact us</p>  
-            </div>
+            @@include('blocks/breadcrumbs.html', {
+                "text": "",
+                "text-2": "Contact Us"
+            })
+            
             <div class="contact-wrapper">
                 <form class="popup-form" action="contact.html">
                     <div class="label-wrapper">
@@ -49,7 +51,12 @@
                             <span class="checkbox-label">By clicking on the button, you consent to the processing of your personal data</span>
                         </label>
                     </div>
-                    <button class="button" type="submit">Submit</button>
+                    @@include('blocks/button.html', {
+                        "class": "button",
+                        "type": "submit",
+                        "text": "Submit"
+                    })
+                   
                 </form>
                 <div class="help">
                     <p>Our support team are on-hand to assist with any issues you are experiencing.</p>

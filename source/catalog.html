@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Catalog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +18,14 @@
 <body>
     @@include('blocks/header.html')
     <main class="container">            
-        <section>
-            <h2 class="title">Category Products</h2>
-            <div class="breadcrumbs">
-                <a class="breadcrumbs-next" href="/">Home</a>
-                <p class="breadcrumbs-disable">Catalog</p>  
-            </div>
-            <div class="catalog">
+        <section class="catalog">
+            <h2 class="catalog-title">Category Products</h2>
+            @@include('blocks/breadcrumbs.html', {
+                "text": "",
+                "text-2": "Catalog"
+            })
+            
+            <div class="catalog-wrapper">
                 <ul class="catalog-list underline">
                     <li>
                         <a href="#">APPAREL KIDS</a>
@@ -32,28 +34,28 @@
                         <a href="#">HOLIDAY SHOP</a>
                     </li>
                     <li>
-                        <a href="toys.html" class="list-toys">TOYS</a>
+                        <a href="toys.html">TOYS</a>
                     </li>
                     <li>
-                        <a href="#" class="list-accessories">ACCESSORIES</a>
+                        <a href="#">ACCESSORIES</a>
                     </li>
                     <li>
-                        <a href="#" class="list-sale">SALE</a>
+                        <a href="#">SALE</a>
                     </li>
                     <li>
-                        <a href="#" class="list-apparel">APPAREL ADULTS</a>
+                        <a href="#">APPAREL ADULTS</a>
                     </li>
                 </ul>
             </div>
             
         </section>
         <section class="product">
-            <h2 class="title">Product Description</h2>
-            <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can
+            <h2 class="product-title">Product Description</h2>
+            <p class="product-text-1">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can
                 even bathe her, just like a little sister.</p>
-            <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be
+            <p class="product-text-2">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be
                 an excellent choice for a gift for a girl from 4 years old.</p>
-            <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
+            <p class="product-text-3">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
                 hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young
                 mistress.</p>
         </section>

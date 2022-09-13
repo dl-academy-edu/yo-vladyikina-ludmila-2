@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Animation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +20,11 @@
     <main class="animation">
         <section class="container">
             <h2 class="animation-title">Animation scene</h2>
-            <div class="breadcrumbs">
-                <a class="breadcrumbs-next" href="/">Home</a>
-                <p class="breadcrumbs-disable">Animation</p>
-            </div>    
+            @@include('blocks/breadcrumbs.html', {
+                "text": "",
+                "text-2": "Animation"
+            })
+            
         </section>
         <section class="animation-wrapper">
             <img class="animation-cloudsmall" src="img/animation/cloud-small.svg" alt="cloud-small">

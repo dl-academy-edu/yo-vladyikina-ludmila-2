@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +18,13 @@
 <body>
     @@include('blocks/header.html')
     <main class="container">     
-        <section>
+        <section class="blog">
             <h2 class="title">Blog</h2>
-            <div class="breadcrumbs">
-                <a class="breadcrumbs-next" href="/">Home</a>
-                <p class="breadcrumbs-disable">Blog</p>
-            </div>
+            @@include('blocks/breadcrumbs.html', {
+                "text": "",
+                "text-2": "Blog"
+            })
+           
             <div class="blog-wrapper">
                 <ul class="blog-link underline">
                     <li>

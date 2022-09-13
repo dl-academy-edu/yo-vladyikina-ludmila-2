@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SVG</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +20,11 @@
     <main class="svg container">
         <section>
             <h2 class="svg-title">SVG animation</h2>
-            <div class="breadcrumbs">
-                <a class="breadcrumbs-next" href="/">Home</a>
-                <p class="breadcrumbs-disable">SVG</p>
-            </div>    
+            @@include('blocks/breadcrumbs.html', {
+                "text": "",
+                "text-2": "SVG"
+            })          
+            
         </section>
         <section class="svg-icon">
             <svg class="svg" id="svg1" width="418" height="351" viewBox="0 0 418 351" fill="none">

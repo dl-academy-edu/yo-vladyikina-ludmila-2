@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Main</title>
+    <title>Designe Life Kids</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -12,6 +13,8 @@
 		rel="stylesheet">     
         <link rel="stylesheet" href="css/style.css">        
     <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="desciption" content="Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.">
+    <meta name="keywords" content="toys for kids, apparel kids, holiday shop, accesseories">
 </head>
 <body>
     
@@ -19,18 +22,23 @@
 
     <main class="container">
         <section class="banner">  
-            <div class="banner-wrapper">  
-                <h1 class="banner-title">THE OOH NOO COLLECTION</h1>
-                <p class="banner-text">Designed in Slovenia</p>
-                <button class="button banner-js">EXPLORE NOW</button> 
-                <img src="img/monster.png" alt="monster" width="635" height="461"> 
+            <div class="banner__wrapper">  
+                <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
+                <p class="banner__text">Designed in Slovenia</p>
+                @@include('blocks/button.html', {
+                    "class": "banner__link button banner-js",
+                    "type": "",
+                    "text": "EXPLORE NOW"
+                })
+                
+                <img src="img/monster.png" alt="monster"> 
             </div>             
             <span class="numbers">01</span>
-            <div class="banner-buttons">               
-                <button class="banner-button-one"></button>
-                <button class="banner-button"></button>
-                <button class="banner-button"></button>
-                <button class="banner-button"></button>
+            <div class="banner__buttons">               
+                <button class="banner__button-one"></button>
+                <button class="banner__button"></button>
+                <button class="banner__button"></button>
+                <button class="banner__button"></button>
             </div> 
         </section>                                                                        
             <div>      
@@ -61,15 +69,15 @@
                     })
                     
                 </ul>
-                <div class="products-list">
+                <div class="products-pages">
                     <button class="button-control-one"></button>  
                     <button class="button-control-two"></button>         
-                    <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to
+                    <p class="products-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to
                         furniture for kids and adults.</p>
                 </div>             
             </section>
             <section class="delivery">                      
-                <img class="delivery-image" src="img/woman.jpg" alt="woman" width="480" height="559">                                 
+                <img class="delivery-image" src="img/woman.jpg" alt="woman">                                 
                 <div class="delivery-list">   
                     <h2 class="delivery-title">Delivery</h2>                
                     <ul class="delivery-links underline">
@@ -77,33 +85,38 @@
                             <a class="delivery-link" href="#">Delivery</a>
                         </li>
                         <li>
-                            <a href="#">Guarantee</a>
+                            <a class="delivery-guarantee" href="#">Guarantee</a>
                         </li>
                         <li>
-                            <a href="#">Credit</a>
+                            <a class="delivery-creadit" href="#">Credit</a>
                         </li>
                     </ul>           
                     <p class="delivery-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
                         completely shocked that four years have flown by. It's simply magical.</p>
                     <p class="delivery-texts">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
                         place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-                    <a href="#" class="button">LEARN MORE</a>                 
+                    @@include('blocks/link.html', {
+                        "href": "#",
+                        "class": "button",
+                        "text": "LEARN MORE"
+                    })
+                               
                 </div>                           
             </section>
         <section class="company">            
             <h2 class="company-title">Company</h2>
             <ul class="company-list underline">
                 <li>
-                    <img src="img/company/company1.png" alt="company1" width="193" height="60">
+                    <img class="company-image" src="img/company/company1.png" alt="company1">
                 </li>
                 <li>
-                    <img src="img/company/company2.png" alt="company2" width="179" height="61">
+                    <img class="company-image" src="img/company/company2.png" alt="company2">
                 </li>
                 <li>
-                    <img class="company-image" src="img/company/company3.png" alt="company3" width="216" height="46">
+                    <img class="company-image" src="img/company/company3.png" alt="company3">
                 </li>
                 <li>
-                    <img class="company-images" src="img/company/company4.png" alt="company4" width="211" height="40">
+                    <img class="company-image" src="img/company/company4.png" alt="company4">
                 </li>
             </ul>      
             
@@ -114,13 +127,18 @@
                     <p class="information-list">About Us</p>
                     <p class="information-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
                         completely shocked that four years have flown by. It's simply magical. </p> 
-                    <a href="#" class="button">buy now</a>                  
+                    @@include('blocks/link.html', {
+                        "href": "#",
+                        "class": "button",
+                        "text": "buy now"
+                    })
+                                   
                 </div>
                 <div class="information-about">                    
                     <h2 class="about-title">Contacts</h2>
                     <p class="about-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
                         completely shocked that four years have flown by. It's simply magical.</p>
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A22f875fc396be51d1edb5f7f55b5e94a567b00a754899ae6ab4e7ba2d6a61f40&amp;source=constructor" width="483" height="196" class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A22f875fc396be51d1edb5f7f55b5e94a567b00a754899ae6ab4e7ba2d6a61f40&amp;source=constructor" class="map">
                     </iframe>
                     
                </div>          
@@ -154,12 +172,17 @@
                     <span class="checkbox-label">By clicking on the button, you consent to the processing of your personal data</span>
                 </label>
             </div>
-            <button class="button" type="submit">Submit</button>
+            @@include('blocks/button.html', {
+                "class": "button",
+                "type": "submit",
+                "text": "Submit"
+            })
+            
             <button class="popup-close">
                 <svg aria-label="close-btn" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
                 </svg>
-        </button>
+            </button>
         </form>        
     </section>
     <script src="js/app.js"></script>
