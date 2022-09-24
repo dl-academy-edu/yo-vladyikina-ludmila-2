@@ -19,7 +19,12 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px; 
-    color: #1E0606;   
+    color: #1E0606; 
+    @media (max-width: 445px) {        
+        font-size: 16px;
+        line-height: 21px;
+    }
+
 }
 
 .breadcrumbs a {
@@ -40,7 +45,12 @@
     top: 7px;   
     background-image: url('../img/breadcrumbs.png');    
     background-position: center; 
-    background-repeat: no-repeat;      
+    background-repeat: no-repeat;    
+    @media (max-width: 445px) {        
+        background-image: url('../img/breadcrumbs-mobile.png');  
+        margin-left: 13px;
+        margin-top: -3px;  
+    }  
 }
 
 .breadcrumbs-disable { 
@@ -59,7 +69,12 @@
     top: 7px;   
     background-image: url('../img/breadcrumbs.png');    
     background-position: center; 
-    background-repeat: no-repeat;      
+    background-repeat: no-repeat;   
+    @media (max-width: 445px) {        
+        background-image: url('../img/breadcrumbs-mobile.png'); 
+        margin-left: 13px;
+        margin-top: -3px;  
+    }   
 }
 
 
