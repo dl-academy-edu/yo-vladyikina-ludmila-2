@@ -4,7 +4,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 215px);
     margin-top: 50px;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: $five-font;
     width: 1400px;
     margin: 0 auto;
   
@@ -12,31 +12,41 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
       margin-top: 40px;
+      width: 768px;
     }
-  
     @media (max-width: 450px) {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto;
       margin-top: 20px;
+      width: 375px;
     }
-  
     &-box {
       display: flex;
       justify-content: center;
     }
-    
     &__title {
-      font-family: 'Montserrat', 'Arial', sans-serif; 
+      font-family: $secondary-font; 
       font-weight: 700;
       font-size: 40px;
       line-height: 49px;
       text-transform: uppercase;
-      color: #1E0606;
+      color: $text-color;
+      margin-left: 18px;
+      @media (max-width: 850px) {
+        font-size: 36px;
+        line-height: 44px;
+        margin-left: 54px;
+      }
+      @media (max-width: 450px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-left: 28px;
+      }
   }
-  }
+}
   
-  .phone {
-    background-color: beige;
+.phone {
+    background-color: $secondary;
     grid-column: 1/3;
     grid-row: 1/3;
     position: relative;
@@ -47,41 +57,36 @@
       grid-column: 1/3;
       grid-row: 2/2;
     }
-  
     @media (max-width: 450px) {
       grid-column: 1/2;
       grid-row: 2/3;
       flex-wrap: wrap;
       min-height: 530px;
     }
-  
     &__content {
       width: 100%;
       max-width: 220px;
       padding-left: 5%;
   
-      @media (max-width: 450px) {
+    @media (max-width: 450px) {
         margin-top: 5%;
         width: 100%;
         max-width: 335px;
       }
     }
-  
     &__text {
-      font-family: 'Lato', 'Arial', sans-serif;    
+      font-family: $five-font;    
       font-weight: bold;
       font-size: 12px;
       line-height: 14px;
       color: #BCBCBE;
     }
-  
     &__title {
-      font-family: 'Lato', 'Arial', sans-serif;
+      font-family: $five-font;
       font-size: 22px;
       line-height: 26px;
       font-weight: 500;
     }
-  
     &__image {
       margin-top: 85px;
       width: 100%;
@@ -92,9 +97,8 @@
         margin-top: 35px;
       }
     }
-  
     &__link {
-      font-family: 'Lato', 'Arial', sans-serif;      
+      font-family: $five-font;      
       font-weight: 500;
       font-size: 14px;
       line-height: 17px;
@@ -114,12 +118,10 @@
       grid-row: 1/1;
       min-height: 278px;
     }
-  
     @media (max-width: 450px) {
       grid-column: 1/2;
       grid-row: 1/2;
     }
-  
     &__content {
       width: 100%;
       max-width: 470px;
@@ -130,17 +132,15 @@
         text-align:initial;
       }
     }
-  
     &__link {
-      font-family: 'Lato', 'Arial', sans-serif;
+      font-family: $five-font;
       font-weight: bold;
       font-size: 12px;
       line-height: 14px;
       color: #BCBCBE;
     }
-  
     &__title {
-      font-family: 'Lato', 'Arial', sans-serif;
+      font-family: $five-font;
       font-weight: bold;
       font-size: 48px;
       line-height: 58px;
@@ -151,15 +151,13 @@
         line-height: 42px;
         text-align: center;
       }
-  
       @media (max-width: 450px) {
         margin-left: 0;
         text-align:initial;
       }
     }
-  
     &__button {
-      font-family: 'Lato', 'Arial', sans-serif;
+      font-family: $five-font;
       font-weight: 500;
       font-size: 14px;
       line-height: 17px;
@@ -182,35 +180,30 @@
       grid-row: 3/3;
       min-height: 430px;
     }
-  
     @media (max-width: 450px) {
       grid-column: 1/2;
       grid-row: 3/3;
       min-height: 322px;
     }
-  
     &__content {
       width: 100%;
       max-width: 314px;
       text-align: center;
     }
-  
     &__img {
       width: 100%;
       max-width: 314px;
       height: auto
     }
-  
     &__title {
-      font-family: 'Lato', 'Arial', sans-serif;
+      font-family: $five-font;
       font-size: 22px;
       line-height: 26px;
       font-weight: bold;
-      color: #FFFFFF;
+      color: $secondary;
     }
-  
     &__link {
-      font-family: 'Lato', 'Arial', sans-serif;
+      font-family: $five-font;
       font-weight: bold;
       font-size: 12px;
       line-height: 14px;
@@ -219,8 +212,8 @@
   }
       
   .apple {
-    font-family: 'Lato', 'Arial', sans-serif;
-    background-color: #FFFFFF;
+    font-family: $five-font;
+    background-color: $secondary;
     grid-column: 2/4;
     grid-row: 3/5;
     position: relative;
@@ -231,14 +224,12 @@
       grid-row: 4/4;
       min-height: 430px;
     }
-  
     @media (max-width: 450px) {
       grid-column: 1/2;
       grid-row: 5/5;
       min-height: 512px;
       flex-wrap: wrap;
     }
-  
     &__block {
       width: 100%;
       max-width: 170px;
@@ -246,12 +237,11 @@
       margin-left: 15%;
       margin-right: 7.5%;
   
-      @media (max-width: 450px) {
+    @media (max-width: 450px) {
         margin-top: 5%;
         margin-left: 5%;
       }
     }
-  
     &__description {
       width: 100%;
       max-width: 230px ;
@@ -265,38 +255,33 @@
         max-width: 100%;
       }
     }
-  
     &__link {
       font-weight: bold;
       font-size: 12px;
       line-height: 14px;
       color: #BCBCBE;
     }
-  
     &__title {
       font-size: 22px;
       line-height: 26px;
       font-weight: 500;
       color: #2C3036;
     }
-  
     &__text {
       font-weight: 500;
       font-size: 14px;
       line-height: 17px;
       color: #BCBCBE;
     }
-  
     &__button {
       font-weight: bold;
       font-size: 12px;
       line-height: 14px;
       color: #2198F4;
       border: none;
-      background-color: #FFFFFF;
+      background-color: $secondary;
       cursor: pointer;
     }
-  
     &__img {
       position: absolute;
       width: 100%;
@@ -321,38 +306,34 @@
     position: relative;
     align-items: center;
     text-align: center;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: $five-font;
   
     @media (max-width: 850px) {
       grid-column: 2/2;
       grid-row: 5/8;
       min-height: 350px;
     }
-  
     @media (max-width: 450px) {
       grid-column: 1/2;
       grid-row: 8/8;
       height: 596px;
     }
-  
     &__content {
       width: 100%;
       max-width: 300px;
       margin-right: 25px;
       margin-left: 25px;
     }
-  
     &__title {
       font-weight: bold;
       font-size: 32px;
       line-height: 38px;
-      color: #FFFFFF;
+      color: $secondary;
   
-      @media (max-width: 450px) {
+    @media (max-width: 450px) {
         margin: 3% 0;
-      }
     }
-  
+    }
     &__text {
       margin: auto;
       margin-bottom: 17%;
@@ -361,9 +342,8 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 17px;
-      color: #FFFFFF;
+      color: $secondary;
     }
-  
     &__link {
       padding: 0 10px;
       margin-top: 5%;
@@ -389,13 +369,11 @@
       grid-row: 6/5;
       min-height: 350px;
     }
-  
     @media (max-width: 450px) {
       grid-column: 1/2;
       grid-row: 6/6;
       min-height: 300px;
     }
-  
     &__lable {
       max-width: 65px;
       padding: 3px 5px;
@@ -405,11 +383,10 @@
       font-size: 8px;
       line-height: 10px;
       text-align: center;
-      color: #FFFFFF;
+      color: $secondary;
       background-color: #FA684F;
       border-radius: 3px;
     }
-  
     &__title {
       max-width: 200px;
       margin: auto;
@@ -418,9 +395,8 @@
       font-size: 22px;
       line-height: 26px;
       font-weight: bold;
-      color: #FFFFFF;
+      color: $secondary;
     }
-  
     &__img {
       width: 100%;
       max-width: 700px;
@@ -434,32 +410,28 @@
     grid-row: 5/7;
     text-align: center;
     align-items: center;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: $five-font;
   
     @media (max-width: 850px) { 
       grid-column: 2/2;
       grid-row: 3/3;
     }
-  
     @media (max-width: 450px) { 
       grid-column: 1/2;
       grid-row: 4/4;
       min-height: 309px;
     }
-  
     &__img {
       width: 100%;
       max-width: 303px;
       height: auto;
     }
-  
     &__title {
       font-size: 22px;
       line-height: 26px;
       font-weight: 500;
       color: #2C3036;
     }
-  
     &__link {
       font-weight: bold;
       font-size: 12px;
@@ -473,24 +445,21 @@
     grid-column: 1/2;
     grid-row: 7/7;
     align-items: center;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: $five-font;
     
     @media (max-width: 850px) {
       grid-column: 1/1;
       min-height: 350px;
     }
-  
     @media (max-width: 450px) {
       grid-column: 1/2;
       grid-row: 7/7;
       min-height: 200px;
     }
-  
     &__content {
       display: flex;
       flex-direction: column;
     }
-  
     &__link {
       margin-top: 15%;
       font-size: 22px;
@@ -508,12 +477,10 @@
     @media (max-width: 850px) {
       grid-column: 1/3;
     }
-  
     @media (max-width: 450px) {
       min-height: 320px;
       flex-wrap: wrap;
     }
-    
     &__img {
       width: 100%;
       max-width: 271px;
@@ -521,14 +488,13 @@
       margin-right: 75px;
       margin-left: -108px;
     }
-  
     &__title {
       width: 100%;
       max-width: 189px;
       font-size: 22px;
       line-height: 26px;
       font-weight: 500;
-      color: #FFFFFF;
+      color: $secondary;
   
       @media (max-width: 450px) {
         margin-top: -20%;
@@ -536,6 +502,15 @@
     }
   }
 
-  .grad__wrapper .breadcrumbs-next-2 {
+  .grad__wrapper .breadcrumbs {
+    @media (max-width: 850px) {
+      margin-left: 60px;
+    }
+    @media (max-width: 450px) {
+      margin-left: 30px;
+    }  
+}
+
+  .grad__wrapper .breadcrumbs__next-2 {
     display: none;
 }

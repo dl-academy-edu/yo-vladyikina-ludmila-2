@@ -3,80 +3,103 @@
 .breadcrumbs {
     display: flex;
     margin-bottom: 50px;    
-    position: relative;    
+    position: relative;
+
     @media (max-width: 768px) {        
         margin-bottom: 9px;
         margin-left: 59px;
         margin-top: 8px;
     }
-}
-
-.breadcrumbs-next,
-.breadcrumbs-next-2,
-.breadcrumbs-disable {
-    font-family: 'Crimson Text','Arial', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px; 
-    color: #1E0606; 
-    @media (max-width: 445px) {        
-        font-size: 16px;
-        line-height: 21px;
-    }
-
-}
-
-.breadcrumbs a {
-    margin-right: 48px;
-}
-
-.breadcrumbs p {
-   margin: 0;
-   margin-left: 1px;
-}
-
-.breadcrumbs-next::after {
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 12px;
-    margin-left: 22px;
-    top: 7px;   
-    background-image: url('../img/breadcrumbs.png');    
-    background-position: center; 
-    background-repeat: no-repeat;    
-    @media (max-width: 445px) {        
-        background-image: url('../img/breadcrumbs-mobile.png');  
-        margin-left: 13px;
-        margin-top: -3px;  
-    }  
-}
-
-.breadcrumbs-disable { 
-    text-transform: capitalize; 
-    cursor: pointer;
-    opacity: .5;
-}
-
-.breadcrumbs-next::after,
-.breadcrumbs-next-2::after {
-    content: '';
-    position: absolute;
-    width: 8px;
-    height: 12px;
-    margin-left: 22px;
-    top: 7px;   
-    background-image: url('../img/breadcrumbs.png');    
-    background-position: center; 
-    background-repeat: no-repeat;   
-    @media (max-width: 445px) {        
-        background-image: url('../img/breadcrumbs-mobile.png'); 
-        margin-left: 13px;
-        margin-top: -3px;  
+    a { 
+        margin-right: 48px;    
+    } 
+    p {
+        margin: 0;
+        margin-left: 1px;
     }   
+    &__next {
+        font-family: $four-font;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px; 
+        color: $text-color; 
+
+        @media (max-width: 445px) {        
+            font-size: 16px;
+            line-height: 21px;       
+            margin-top: -1px;
+            margin-left: 1px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 12px;
+            margin-left: 22px;
+            top: 7px;   
+            background-image: url('../img/breadcrumbs.png');    
+            background-position: center; 
+            background-repeat: no-repeat; 
+
+            @media (max-width: 445px) {        
+                background-image: url('../img/breadcrumbs-mobile.png'); 
+                margin-left: 13px;
+                margin-top: -3px;  
+            }   
+        }
+    }
+    &__next-2 {
+        font-family: $four-font;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px; 
+        color: $text-color; 
+
+        @media (max-width: 445px) {        
+            font-size: 16px;
+            line-height: 21px;       
+            margin-top: -1px;
+            margin-left: 1px;
+       
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 12px;
+            margin-left: 22px;
+            top: 7px;   
+            background-image: url('../img/breadcrumbs.png');    
+            background-position: center; 
+            background-repeat: no-repeat; 
+
+            @media (max-width: 445px) {        
+                background-image: url('../img/breadcrumbs-mobile.png');  
+                margin-left: 13px;
+                margin-top: -3px;  
+            }  
+        }  
+    }
+    &__disable {
+        font-family: $four-font;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px; 
+        color: $text-color; 
+        text-transform: capitalize; 
+        cursor: pointer;
+        opacity: .5;
+
+        @media (max-width: 445px) {        
+            font-size: 16px;
+            line-height: 21px;       
+            margin-top: -1px;
+            margin-left: 1px;
+        }  
+    }
 }
-
-
 
 

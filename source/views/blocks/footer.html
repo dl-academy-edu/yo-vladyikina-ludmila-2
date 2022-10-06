@@ -47,18 +47,18 @@
             </ul>
         </div>
         <div class="footer__menu">
-            <p class="footer__title__connect">Connect</p>
+            <p class="footer__title connect">Connect</p>
             <form class="footer__form">
                 <label for="email"></label>
                 <input type="email" id="email" name="email" class="email" placeholder="Email">
                 @@include('blocks/button.html', {
-                    "class": "footer__button button",
+                    "class":"footer__button",
                     "type": "submit",
                     "text": "join"
                 })
                 
             </form>
-            <ul class="underline inline footer__content__social">
+            <ul class="underline footer__content social">
                 <li>
                     <a href="#">
                         <svg aria-label="facebook" width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -114,9 +114,9 @@
             </ul>
         </div>
     </div>
-    <section class="footer__information container">        
+    <section class="footer-information container">        
         <div class="company-rating"> 
-            <p class="company-rating__text">Company Rating</p> 
+            <p class="company-rating__title">Company Rating</p> 
             <form class="company-rating__star">         
                 <input type="radio" id="star-5" name="rating" value="5">
                 <label for="star-5">
@@ -140,8 +140,8 @@
                 </label>            
             </form>           
         </div>
-        <p class="footer__information__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-        <a class="footer__information__web-design-link" href="#">Web Design — Direct Line Development</a>        
+        <p class="footer-information__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+        <a class="footer-information__web-design-link" href="#">Web Design — Direct Line Development</a>        
     </section>  
 
 </footer>

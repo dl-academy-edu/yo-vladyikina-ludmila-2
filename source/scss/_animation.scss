@@ -94,230 +94,242 @@
     }
 }
 
+.animation {
+    &__title{
+        font-family: $secondary-font;    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase; 
+        color: $text-color; 
 
-.animation-title{
-    font-family: 'Montserrat', 'Arial', sans-serif;    
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    text-transform: uppercase; 
-    color: #1E0606;    
-}
-
-.animation-wrapper {    
-    min-height: 768px;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 67px;
-}
-
-.animation-cloudsmall {
-    position: absolute;
-    width: 92px;
-    height: 26px;
-    opacity: 0;
-    z-index: 2;
-}
-
-.animation-cloudsmall:nth-child(1) {
-    top: 1%;
-    animation: Clouds 38s infinite linear 25s;
-}
-
-.animation-cloudsmall:nth-child(2) {
-    top: 6%;
-    animation: Clouds 38s infinite linear;
-}
-
-.animation-cloudbig {
-    position: absolute;
-    width: 186px;
-    height: 38px;
-    opacity: 0;
-    z-index: 2;
-}
-.animation-cloudbig:nth-child(3) {
-    top: 9%;
-    animation: Clouds 38s infinite linear 20s;
-}
-
-.animation-cloudbig:nth-child(4) {
-    top: 0%;
-    animation: Clouds 38s infinite linear 15s;
-}
-
-.animation-cloudbig:nth-child(5) {
-    top: 13%;
-    animation: Clouds 38s infinite linear 10s;
-}
-
-.animation-cloudbig:nth-child(6) {
-    top: 11%;
-    animation: Clouds 38s infinite linear 5s;
-}
-
-.animation-sun {
-    position: absolute;
-    width: 59px;
-    height: 59px;
-    right: 400px;
-    top: 2px;
-    z-index: 2; 
-}
-
-.animation-city {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    bottom: 0;
-    z-index: 1;
-
-}
-
-.animation-lanternsleft,
-.animation-lanternsright {
-    position: absolute; 
-    width: 150px;
-    height: 395px; 
-    z-index: 6; 
-}
-
-.animation-lanternsleft {   
-   left: 37%;
-   top: 27%;   
-}
-
-.animation-lanternsright {
-    right: 11%;
-    top: 27%;   
-}
-
-.animation-lanternslight {
-    position: absolute;
-    width: 214px;
-    height: 562px;
-    top: 22%;
-    right: 20%;
-    z-index: 10;
-}
-
-.animation-car {
-    position: absolute;
-    opacity: 0;
-}
-
-.animation-car:nth-child(11) {
-    width: 251px;
-    height: 99px;
-    top: 59%;
-    z-index: 4;
-    animation: Cars 13s infinite linear 12s;
-}
-.animation-car:nth-child(12) {
-    width: 203px;
-    height: 96px;
-    top: 56%;
-    z-index: 3;
-    animation: Cars 11s infinite linear 8s;
-}
-.animation-car:nth-child(13) {
-    width: 246px;
-    height: 65px;
-    top: 58%;
-    z-index: 2;
-    animation: Cars 10s infinite linear 4s;
-}
-.animation-car:nth-child(14) {
-    width: 268px;
-    height: 126px;
-    top: 58%;
-    z-index: 5;
-    animation: Cars 13s infinite linear;
-}
-
-.animation-woman {
-    position: absolute;
-    width: 271px;
-    height:374px;
-    left: 20%;
-    bottom: 0;
-    z-index: 10;
-}
-
-
-.animation-man {
-    position: absolute;
-    width: 215px;
-    height: 437px;
-    left: 31%;
-    bottom: 0;
-    z-index: 9;
-}
-
-.animation-handwoman {
-    position: absolute;
-    width: 63px;
-    height: 44px;
-    left: 26%;
-    bottom: 15%;
-    z-index: 8;   
-    animation: Handwomen 11s infinite ease-in-out 2s;
-    transform-origin: 10px 10px;
-}
-
-.animation-handman {
-    position: absolute;
-    width: 89px;
-    height: 128px;
-    left: 31%;
-    bottom: 37%;
-    z-index: 8;
-    opacity: 0;
-    animation: Handman 11s infinite ease-in-out;
-    transform-origin: 13% 90%;
-}
-.animation-taxi {
-    position: absolute;
-    width: 886px;
-    height: 265px;
-    right: 0;
-    bottom: 12%;
-    z-index: 7;
-    opacity: 0;
-    animation: Taxi 11s infinite ease 6s;
-}
-.animation-message {
-    position: absolute;
-    z-index: 11;
-    opacity: 0;
-}
-
-.animation-message:nth-child(21) {
-    width: 161px;
-    bottom: 34%;
-    left: 22%;  
-    animation: Message 11s infinite 3s;
-}
-
-.animation-message:nth-child(22) {
-    width: 161px;
-    bottom: 50%;
-    left: 33%;
-    animation: Message 11s infinite 5s;
-}
-.animation-message:nth-child(23) {
-    width: 161px;
-    bottom: 42%;
-    left: 45%;
-    animation: Message 11s infinite 8s;
-}
-.animation-message:nth-child(24) {
-    width: 161px;
-    bottom: 50%;
-    left: 33%;
-    animation: Message 11s infinite 9s;
+        @media (max-width: 768px) {
+            font-size: 36px;
+            line-height: 44px;
+            margin-left: 63px;
+            margin-top: 34px;
+            
+        }
+        @media (max-width: 376px) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-left: 18px;
+            margin-top: 11px;
+            
+          }
+        }
+    &__wrapper {    
+        height: 44.8vw;
+        max-height: 768px;       
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 67px;
+    }
+    &__cloudsmall {
+        position: absolute;
+        width: 7%;
+        height: 6%;
+        opacity: 0;
+        z-index: 2;
+        &:nth-child(1) {
+            top: 1%;
+            animation: Clouds 38s infinite linear 25s;
+        }        
+        &:nth-child(2) {
+            top: 6%;
+            animation: Clouds 38s infinite linear;
+        }
+    }
+    &__cloudbig {
+        position: absolute;
+        width: 11%;
+        height: 6%;
+        opacity: 0;
+        z-index: 2;
+        &:nth-child(3) {
+            top: 9%;
+            animation: Clouds 38s infinite linear 20s;
+        }
+        &:nth-child(4) {
+            top: 0%;
+            animation: Clouds 38s infinite linear 15s;
+        }
+        &:nth-child(5) {
+            top: 13%;
+            animation: Clouds 38s infinite linear 10s;
+        }
+        &:nth-child(6) {
+            top: 11%;
+            animation: Clouds 38s infinite linear 5s;
+        }
+    }
+    &__sun {
+        position: absolute;
+        width: 4%;
+        height: 8%;
+        right: 15%;
+        top: 2%;
+        z-index: 2; 
+    }
+    &__city {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        bottom: 0;
+        z-index: 1;
+    }
+    &__lanternsleft,
+    &__lanternsright {
+        position: absolute; 
+        width: 11%;
+        height: 51%;
+        z-index: 6; 
+    }
+    &__lanternsleft {   
+       left: 37%;
+       top: 27%;   
+    }
+    &__lanternsright {
+        right: 11%;
+        top: 27%;   
+    }
+    &__lanternslight {
+        position: absolute;
+        width: 15%;
+        height: 72%;
+        top: 22%;
+        right: 20%;
+        z-index: 10;
+    }
+    &__car {
+        position: absolute;
+        opacity: 0;
+        &:nth-child(11) {
+            width: 19%;
+            height: 13%;
+            top: 59%;
+            z-index: 4;
+            animation: Cars 13s infinite linear 12s;
+        }
+        &:nth-child(12) {
+            width: 17%;
+            height: 11%;
+            top: 58%;
+            z-index: 3;
+            animation: Cars 11s infinite linear 8s;
+        }
+        &:nth-child(13) {
+            width: 15%;
+            height: 10%;
+            top: 58%;
+            z-index: 2;
+            animation: Cars 10s infinite linear 4s;
+        }
+        &:nth-child(14) {
+            width: 20%;
+            height: 16%;
+            top: 58%;
+            z-index: 5;
+            animation: Cars 13s infinite linear;
+        }
+    }
+    &__woman {
+        position: absolute;
+        width: 13%;
+        height: 40%;
+        left: 20%;
+        bottom: 0;
+        z-index: 10;
+    }
+    &__man {
+        position: absolute;
+        width: 14%;
+        height: 50%;
+        left: 31%;
+        bottom: 0;
+        z-index: 9;
+    }
+    &__handwoman {
+        position: absolute;
+        max-width: 4%;
+        width: 4vw;
+        left: 25%;
+        bottom: 12%;
+        z-index: 8;   
+        animation: Handwomen 11s infinite ease-in-out 2s;
+        transform-origin: 10px 10px;
+    }
+    &__handman {
+        position: absolute;
+        width: 7%;
+        height: 16%;
+        left: 32%;
+        bottom: 37%;
+        z-index: 8;
+        opacity: 0;
+        animation: Handman 11s infinite ease-in-out;
+        transform-origin: 13% 90%;
+    }
+    &__taxi {
+        position: absolute;
+        width: 37%;
+        height: 35%;
+        right: 0;
+        bottom: 12%;
+        z-index: 7;
+        opacity: 0;
+        animation: Taxi 11s infinite ease 6s;
+    }
+    &__message {
+        position: absolute;
+        z-index: 11;
+        opacity: 0;
+        &:nth-child(21) {
+            width: 10%;
+            bottom: 34%;
+            left: 22%;  
+            animation: Message 11s infinite 3s;
+        }
+        &:nth-child(22) {
+            width: 10%;
+            bottom: 50%;
+            left: 33%;
+            animation: Message 11s infinite 5s;
+        }
+        &:nth-child(23) {
+            width: 10%;
+            bottom: 42%;
+            left: 45%;
+            animation: Message 11s infinite 8s;
+        }
+        &:nth-child(24) {
+            width: 10%;
+            bottom: 50%;
+            left: 33%;
+            animation: Message 11s infinite 9s;
+        }
+    } 
 }
 
-.animation .breadcrumbs-next-2 {
+.animation .breadcrumbs__next-2 {
     display: none;
+}
+
+.animation .breadcrumbs {
+    @media (max-width: 769px) {        
+        margin-left: 60px;
+        margin-top: -21px;
+        margin-bottom: 30px;  
+    }
+    @media (max-width: 376px) {        
+        margin-bottom: 19px;
+        margin-left: 18px;
+        margin-top: -9px;
+    }
+}
+.animation .breadcrumbs__disable { 
+    @media (max-width: 376px) {   
+        margin-left: -13px;
+        margin-top: -2px;       
+    }
 }

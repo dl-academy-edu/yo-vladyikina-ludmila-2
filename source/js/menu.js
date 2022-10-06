@@ -6,10 +6,10 @@ var mobileHeader = document.querySelector(".mobile-header");
 
 //open
 buttonMobileHeader.addEventListener("click",function(){
-  mobileHeader.classList.add("mobile-header_open");
+  mobileHeader.classList.add("mobile-header__open");
 });
 
 //close
 buttonCloseMobileHeader.addEventListener("click", function(){
-  mobileHeader.classList.remove("mobile-header_open");
+  mobileHeader.classList.remove("mobile-header__open");
 });

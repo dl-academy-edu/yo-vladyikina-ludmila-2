@@ -1,15 +1,63 @@
-.svg-title{
-    font-family: 'Montserrat', 'Arial', sans-serif;    
+.svg {    
+  stroke-dasharray: 175;
+  stroke-dashoffset: 700;
+  animation: line 7s linear forwards;
+  animation-iteration-count:infinite;
+  &__title{
+    font-family: $secondary-font;    
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
     text-transform: uppercase; 
-    color: #1E0606;    
-}
+    color: $text-color; 
 
-.svg-icon {
+    @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 44px;
+        margin-left: 63px;
+        margin-top: 34px;
+    }
+    @media (max-width: 376px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-left: 18px;
+        margin-top: 11px;
+        
+    }
+  }
+  &__icon {
     margin-top: 38px;
     margin-bottom: 60px;
+
+    @media (max-width: 768px) {
+        margin-left: 23px;
+    }
+    @media (max-width: 490px) {
+        width: 100%;
+        height: auto;
+        margin-left: 9px;
+    }
+  }
+  &__sun {
+    animation: sun 7s linear infinite;
+}  
+}
+
+.svg .breadcrumbs {
+    @media (max-width: 376px) {
+       margin-left: 18px;
+    } 
+}
+
+.svg .breadcrumbs__next-2 {
+  display: none;
+}
+
+.svg .breadcrumbs__disable {
+  @media (max-width: 376px) {        
+      margin-left: -14px;
+      margin-top: -1px;
+  }
 }
 
 @keyframes line {
@@ -18,12 +66,6 @@
     }
   }
  
-.svg {    
-    stroke-dasharray: 175;
-    stroke-dashoffset: 700;
-    animation: line 7s linear forwards;
-    animation-iteration-count:infinite;
-}
  
 @keyframes sun {
     10% {
@@ -37,13 +79,8 @@
     }
 }
   
-.svg-sun {
-    animation: sun 7s linear infinite;
-}  
 
-.svg .breadcrumbs-next-2 {
-    display: none;
-}
+
 
 
       

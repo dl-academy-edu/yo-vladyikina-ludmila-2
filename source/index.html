@@ -11,7 +11,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap"
 		rel="stylesheet">     
-        <link rel="stylesheet" href="css/style.css">        
+    <link rel="stylesheet" href="css/style.css">        
     <link rel="shortcut icon" href="img/favicon.ico">
     <meta name="desciption" content="Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.">
     <meta name="keywords" content="toys for kids, apparel kids, holiday shop, accesseories">
@@ -20,7 +20,7 @@
     
     @@include('blocks/header.html')
 
-    <main class="container">
+    <main class="container">       
         <section class="banner">  
             <div class="banner__wrapper">  
                 <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
@@ -39,20 +39,23 @@
             </div>             
             <span class="numbers">01</span>
             <div class="banner__buttons">               
-                <button class="banner__button-one"></button>
+                <button class="banner__button_active"></button>
                 <button class="banner__button"></button>
                 <button class="banner__button"></button>
                 <button class="banner__button"></button>
             </div> 
         </section>                                                                        
-            <div class="banner-botton">      
+            <div class="banner__botton">      
                 <p class="text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
-            </div>        
-        
+            </div>  
+            <audio class="audio" loop controls="true">
+                <source src="https://cdn.drivemusic.me/dl/online/SAjf8gXzNsj7z5PK5yFApg/1664433940/download_music/2020/03/fausto-papetti-more.mp3" type="audio/mp3">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>                     
             <section class="products">
-                <h2 class="products-title">Category Products</h2>
+                <h2 class="products__title">Category Products</h2>
                 
-                    <ul class="products-list underline row">
+                    <ul class="products__list underline row">
                         @@include('blocks/products.html', {
                             "link": "#",
                             "text": "APPAREL KIDS"                        
@@ -75,10 +78,10 @@
                         
                     </ul>
                
-                <div class="products-pages">
-                    <button class="button-control-one"></button>  
-                    <button class="button-control-two"></button>         
-                    <p class="products-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to
+                <div class="products__pages">
+                    <button class="button__control_one"></button>  
+                    <button class="button__control_two"></button>         
+                    <p class="products__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to
                         furniture for kids and adults.</p>
                 </div>             
             </section>
@@ -87,25 +90,25 @@
                     <source srcset="img/woman/woman-mobile_1x.jpg, img/woman/woman-mobile_2x.jpg" media="(max-width: 560px)">
                     <source srcset="img/woman/woman-tablet_1x.jpg, img/woman/woman-tablet_2x.jpg" media="(max-width: 1060px)">
                     <source srcset="img/woman/woman_1x.jpg, img/woman/woman_2x.jpg">
-                    <img class="delivery-image" src="img/woman/woman_1x.jpg" alt="woman">   
+                    <img class="delivery__image" src="img/woman/woman_1x.jpg" alt="woman">   
                 </picture>                
                                       
-                <div class="delivery-list">   
-                    <h2 class="delivery-title">Delivery</h2>                
-                    <ul class="delivery-links underline">
+                <div class="delivery__list">   
+                    <h2 class="delivery__title">Delivery</h2>                
+                    <ul class="delivery__links underline">
                         <li>
-                            <a class="delivery-link" href="#">Delivery</a>
+                            <a class="delivery__link" href="#">Delivery</a>
                         </li>
                         <li>
-                            <a class="delivery-guarantee" href="#">Guarantee</a>
+                            <a class="delivery__guarantee" href="#">Guarantee</a>
                         </li>
                         <li>
-                            <a class="delivery-creadit" href="#">Credit</a>
+                            <a class="delivery__creadit" href="#">Credit</a>
                         </li>
                     </ul>           
-                    <p class="delivery-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
+                    <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
                         completely shocked that four years have flown by. It's simply magical.</p>
-                    <p class="delivery-texts">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
+                    <p class="delivery__texts">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
                         place for me and i have you and all of the beautiful designers that we work with to thank!</p>
                     @@include('blocks/link.html', {
                         "href": "#",
@@ -116,28 +119,28 @@
                 </div>                           
             </section>
         <section class="company">            
-            <h2 class="company-title">Company</h2>
-            <ul class="company-list underline">
+            <h2 class="company__title">Company</h2>
+            <ul class="company__list underline">
                 <li>
-                    <img class="company-image" src="img/company/company1.png" alt="company1">
+                    <img class="company__image" src="img/company/company1.png" alt="company1">
                 </li>
                 <li>
-                    <img class="company-image" src="img/company/company2.png" alt="company2">
+                    <img class="company__image" src="img/company/company2.png" alt="company2">
                 </li>
                 <li>
-                    <img class="company-image" src="img/company/company3.png" alt="company3">
+                    <img class="company__image" src="img/company/company3.png" alt="company3">
                 </li>
                 <li>
-                    <img class="company-image" src="img/company/company4.png" alt="company4">
+                    <img class="company__image" src="img/company/company4.png" alt="company4">
                 </li>
             </ul>      
             
         </section>
         <section class="information">
-                <div class="information-about">
-                    <h2 class="information-title">Design Life Kids</h2>
-                    <p class="information-list">About Us</p>
-                    <p class="information-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
+                <div class="information__about">
+                    <h2 class="information__title">Design Life Kids</h2>
+                    <p class="information__list">About Us</p>
+                    <p class="information__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
                         completely shocked that four years have flown by. It's simply magical. </p> 
                     @@include('blocks/link.html', {
                         "href": "#",
@@ -146,42 +149,44 @@
                     })
                                    
                 </div>
-                <div class="information-about">                    
-                    <h2 class="about-title">Contacts</h2>
-                    <p class="about-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
+                <div class="information__about">                    
+                    <h2 class="about__title">Contacts</h2>
+                    <p class="about__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
                         completely shocked that four years have flown by. It's simply magical.</p>
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A22f875fc396be51d1edb5f7f55b5e94a567b00a754899ae6ab4e7ba2d6a61f40&amp;source=constructor" class="map">
                     </iframe>
                     
                </div>          
         </section>
+        
+        
     </main>
     @@include('blocks/footer.html')   
     <section class="popup">
         <h2>Window Model</h2>
-        <form class="popup-form" action="index.html">
-            <div class="label-wrapper">
-                <label for="input-name" class="label-name" >Name</label>
-                <input type="text" id="input-name" class="input-name" placeholder="Ivan Ivanov">
+        <form class="window-mobel popup__form" action="index.html">
+            <div class="label__wrapper">
+                <label for="input-name" class="label__name" >Name</label>
+                <input type="text" id="input-name" class="input__name" placeholder="Ivan Ivanov">
             </div>
             <div class="field-2-column">
-                <div class="label-wrapper-phone">
-                    <label for="input-phone" class="label-phone">Phone</label>
-                    <input type="tel" id="input-phone" class="input-phone">
+                <div class="label__wrapper">
+                    <label for="input-phone" class="label__phone">Phone</label>
+                    <input type="tel" id="input-phone" class="input__phone">
                 </div>
-                <div class="label-wrapper">
-                    <label for="input-email" class="label-email">Email</label>
-                    <input type="email" id="input-email" class="input-email">
+                <div class="label__wrapper">
+                    <label for="input-email" class="label__email">Email</label>
+                    <input type="email" id="input-email" class="input__email">
                 </div>
             </div>
-            <div class="label-wrapper">
-                <label for="textarea" Class="label-message">Message</label>
-                <textarea name="#" id="textarea" cols="30" rows="10" class="input-message"></textarea>
+            <div class="label__wrapper">
+                <label for="textarea" Class="label__message">Message</label>
+                <textarea name="#" id="textarea" cols="30" rows="10" class="input__message"></textarea>
             </div>
             <div>
-                <label class="label-wrapper consent">
-                    <input type="checkbox" class="checkbox-input" checked>
-                    <span class="checkbox-label">By clicking on the button, you consent to the processing of your personal data</span>
+                <label class="label__wrapper consent">
+                    <input type="checkbox" class="checkbox__input" checked>
+                    <span class="checkbox__label">By clicking on the button, you consent to the processing of your personal data</span>
                 </label>
             </div>
             @@include('blocks/button.html', {
@@ -190,14 +195,15 @@
                 "text": "Submit"
             })
             
-            <button class="popup-close">
-                <svg aria-label="close-btn" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="popup__close">
+                <svg aria-label="close__button" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
                 </svg>
             </button>
         </form>        
     </section>
     <script src="js/app.js"></script>
+    
 </body>
 
 </html>

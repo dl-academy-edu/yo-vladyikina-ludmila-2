@@ -3,11 +3,11 @@
 }
 
 body {
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: $primary-font;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: #1E0606;
+    color: $text-color;
 }
 
 a {
@@ -20,21 +20,19 @@ a {
     margin: 0;
 }
 
-/* vector */
-
-.pagination-vector-left, 
-.pagination-vector-right {    
-    background-image: url('../img/vector-left.svg');    
-    background-repeat: repeat;
-    background-position: center;  
-    display: block;
-    top: 0;
-    right: 0;
-    width: 17px;
-    height: 30px;   
-}   
-
 /* popup */
+
+.window-mobel {
+    @media (max-width: 769px) {        
+        top: -83px;
+        right: 60px;        
+    }
+    @media (max-width: 376px) {      
+        padding-left: 3px;
+        top: -313px;
+        right: 70px;
+    }
+}
 
 .popup {
     position: fixed;    
@@ -47,39 +45,60 @@ a {
     display: none;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 769px) {        
+        width: 768px;  
+    }
+    @media (max-width: 376px) {      
+        width: 403px;     
+    }
+    &__open {
+        display: flex;
+    }
+    
+    &__form {
+        width: 680px;
+        background: #E5EAF8;
+        padding: 67px 42px 53px 42px;
+        position: relative;
+        margin-right: 75px;
+        margin-bottom: 2px;
+        @media (max-width: 768px) {
+            margin-left: 91px;
+            order: 1;
+            width: 648px;
+            margin-bottom: -63px;
+        }
+        @media (max-width: 376px) {
+            height: 555px;
+            margin-top: -19px;
+            width: 335px;
+            margin-bottom: -61px;
+        }
+    }
+    &__close {
+        border: none;
+        background: transparent;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer; 
+        background: #E5EAF8;
+        transform: rotate(90deg); 
+
+        &:hover {
+            background: rgba(240, 240, 240, 0.7);
+            transform: rotate(90deg);
+        }
+        &:active {
+        background: rgba(240, 240, 240, 0.4);
+        transform: rotate(90deg) 
+        } 
+    }
 }
 
-.popup-open {
-    display: flex;
-}
 
-.popup-form {
-    width: 680px;
-    background: #E5EAF8;
-    padding: 67px 42px 53px 42px;
-    position: relative;
-    margin-right: 75px;
-    margin-bottom: 2px;
-}
 
-.popup-close {
-    border: none;
-    background: transparent;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer; 
-    background: #E5EAF8;
-    transform: rotate(90deg);    
-}
 
-.popup-close:hover {
-    background: rgba(240, 240, 240, 0.7);
-    transform: rotate(90deg);
-}
 
-.popup-close:active {
-background: rgba(240, 240, 240, 0.4);
-transform: rotate(90deg) 
-} 
 
