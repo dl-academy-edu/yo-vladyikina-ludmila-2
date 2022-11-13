@@ -5,20 +5,21 @@
     grid-template-rows: repeat(7, 215px);
     margin-top: 50px;
     font-family: $five-font;
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
   
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
       margin-top: 40px;
-      width: 768px;
+      max-width: 768px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto;
       margin-top: 20px;
-      width: 375px;
+      max-width: 375px;
     }
     &-box {
       display: flex;
@@ -32,12 +33,12 @@
       text-transform: uppercase;
       color: $text-color;
       margin-left: 18px;
-      @media (max-width: 850px) {
+      @media (max-width: 1200px) {
         font-size: 36px;
         line-height: 44px;
         margin-left: 54px;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 500px) {
         font-size: 24px;
         line-height: 29px;
         margin-left: 28px;
@@ -53,11 +54,11 @@
     align-items: center;
     justify-content: space-evenly;
   
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       grid-column: 1/3;
       grid-row: 2/2;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       grid-column: 1/2;
       grid-row: 2/3;
       flex-wrap: wrap;
@@ -68,7 +69,7 @@
       max-width: 220px;
       padding-left: 5%;
   
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
         margin-top: 5%;
         width: 100%;
         max-width: 335px;
@@ -93,7 +94,7 @@
       max-width: 249px;
       height: auto;
   
-      @media (max-width: 450px) {
+      @media (max-width: 500px) {
         margin-top: 35px;
       }
     }
@@ -113,12 +114,12 @@
     position: relative;
     align-items: center;
   
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       grid-column: 1/3;
       grid-row: 1/1;
       min-height: 278px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       grid-column: 1/2;
       grid-row: 1/2;
     }
@@ -127,7 +128,7 @@
       max-width: 470px;
       text-align: center;
   
-      @media (max-width: 450px) {
+      @media (max-width: 500px) {
         margin-left: 5%;
         text-align:initial;
       }
@@ -146,12 +147,12 @@
       line-height: 58px;
       margin: 5%;
   
-      @media (max-width: 850px) {
+      @media (max-width: 1200px) {
         font-size: 35px;
         line-height: 42px;
         text-align: center;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 500px) {
         margin-left: 0;
         text-align:initial;
       }
@@ -175,12 +176,12 @@
     grid-row: 3/5;
     align-items: center;
   
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       grid-column: 1/1;
       grid-row: 3/3;
       min-height: 430px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       grid-column: 1/2;
       grid-row: 3/3;
       min-height: 322px;
@@ -219,12 +220,12 @@
     position: relative;
     justify-content: flex-start;
   
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       grid-column: 1/3;
       grid-row: 4/4;
       min-height: 430px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       grid-column: 1/2;
       grid-row: 5/5;
       min-height: 512px;
@@ -237,7 +238,7 @@
       margin-left: 15%;
       margin-right: 7.5%;
   
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
         margin-top: 5%;
         margin-left: 5%;
       }
@@ -249,7 +250,7 @@
       margin-left: 15%;
       margin-right: 7.5%;
   
-      @media (max-width: 450px) {
+      @media (max-width: 500px) {
         margin-left: 5%;
         margin-top: 40%;
         max-width: 100%;
@@ -289,11 +290,11 @@
       bottom: 0;
       left: 0;
   
-      @media (max-width: 850px) {
+      @media (max-width: 1200px) {
         position: absolute;
       }
   
-      @media (max-width: 450px) {
+      @media (max-width: 500px) {
         bottom: initial;
       }
     }
@@ -308,12 +309,12 @@
     text-align: center;
     font-family: $five-font;
   
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       grid-column: 2/2;
       grid-row: 5/8;
       min-height: 350px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       grid-column: 1/2;
       grid-row: 8/8;
       height: 596px;
@@ -330,7 +331,7 @@
       line-height: 38px;
       color: $secondary;
   
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
         margin: 3% 0;
     }
     }
@@ -364,12 +365,12 @@
     font-family: 'Lato', 'Arial', sans-serif;
     flex-direction: column;
   
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       grid-column: 1/1;
       grid-row: 6/5;
       min-height: 350px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       grid-column: 1/2;
       grid-row: 6/6;
       min-height: 300px;
@@ -412,11 +413,11 @@
     align-items: center;
     font-family: $five-font;
   
-    @media (max-width: 850px) { 
+    @media (max-width: 1200px) { 
       grid-column: 2/2;
       grid-row: 3/3;
     }
-    @media (max-width: 450px) { 
+    @media (max-width: 500px) { 
       grid-column: 1/2;
       grid-row: 4/4;
       min-height: 309px;
@@ -447,11 +448,11 @@
     align-items: center;
     font-family: $five-font;
     
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       grid-column: 1/1;
       min-height: 350px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       grid-column: 1/2;
       grid-row: 7/7;
       min-height: 200px;
@@ -474,10 +475,10 @@
     grid-column: 2/5;
     align-items: center;
   
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       grid-column: 1/3;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       min-height: 320px;
       flex-wrap: wrap;
     }
@@ -496,17 +497,17 @@
       font-weight: 500;
       color: $secondary;
   
-      @media (max-width: 450px) {
+      @media (max-width: 500px) {
         margin-top: -20%;
       }
     }
   }
 
   .grad__wrapper .breadcrumbs {
-    @media (max-width: 850px) {
+    @media (max-width: 1200px) {
       margin-left: 60px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 500px) {
       margin-left: 30px;
     }  
 }

@@ -20,6 +20,10 @@ a {
     margin: 0;
 }
 
+.img {
+    width: 100%;
+}
+
 /* popup */
 
 .window-mobel {
@@ -55,7 +59,12 @@ a {
     &__open {
         display: flex;
     }
-    
+    &__title {
+        font-size: 0;
+        width: 0;
+        height: 0
+    }
+     ;
     &__form {
         width: 680px;
         background: #E5EAF8;

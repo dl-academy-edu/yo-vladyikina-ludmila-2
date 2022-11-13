@@ -3,15 +3,20 @@
 
 .footer {
     background: #434343;
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
   
-    @media (max-width: 770px) {    
-      width: 768px;    
+    @media (max-width: 1242px) {    
+      max-width: 1200px;    
     }
+    @media (max-width: 800px) {    
+      max-width: 768px;    
+    }   
     @media (max-width: 400px) {    
-      width: 375px;    
+      max-width: 375px;    
     }
+
   a {
     color: $secondary;
     text-decoration: none;
@@ -22,13 +27,13 @@
       max-width: auto;
       padding-top: 85px;
 
-      @media (max-width: 768px) {    
+      @media (max-width: 1242px) {    
         padding-top: 63px;
         margin-left: 61px;
         margin-top: 0px;
         margin-right: -16px;
       }
-      @media (max-width: 400px) { 
+      @media (max-width: 740px) { 
         flex-direction: column;    
         margin-left: 20px;
       }
@@ -42,10 +47,10 @@
       width: 380px;
       margin-bottom: 28px;
 
-      @media (max-width: 768px) {    
+      @media (max-width: 1242px) {    
         width: 202px;
     }
-      @media (max-width: 400px) {    
+      @media (max-width: 740px) {    
         width: 335px;
         margin-top: 5px;
         height: 44px;
@@ -54,17 +59,17 @@
   &__menu {
     margin-right: 20px;
 
-      @media (max-width: 768px) {    
+      @media (max-width: 1242px) {    
         margin-left: -1px;
         margin-top: 2px;
         margin-right: 22px;  
     }  
-      @media (max-width: 400px) {    
+      @media (max-width: 740px) {    
       margin-top: 2px;
     } 
   }  
   &__content {
-      @media (max-width: 400px) {      
+      @media (max-width: 740px) {      
         column-count: 2;
         width: 95%;
         margin-top: -13px;
@@ -74,7 +79,7 @@
         margin-top: 15px;
         transition: all .4s; 
 
-          @media (max-width: 400px) {   
+          @media (max-width: 740px) {   
             margin-top: 0px;
         }
         &:hover {
@@ -90,7 +95,7 @@
     }
   }  
   &__item {
-    @media (max-width: 400px) {   
+    @media (max-width: 740px) {   
       display: inline-block;  
       font-size: 14px;
       line-height: 19px;  
@@ -101,7 +106,7 @@
     max-width: 380px;
     margin-bottom: 21px;
 
-    @media (max-width: 768px) {    
+    @media (max-width: 1242px) {    
       max-width: 202px;
   }
   }
@@ -120,7 +125,7 @@
       margin-bottom: -2px;
       transition: all $transition-duration;  
 
-      @media (max-width: 400px) {    
+      @media (max-width: 740px) {    
         font-size: 14px;
         line-height: 19px;
         padding: 9px 20px 9px 20px; 
@@ -140,7 +145,7 @@
 }
 
 .connect {
-    @media (max-width: 400px) {       
+    @media (max-width: 740px) {       
     margin-top: 30px;
 }
 }
@@ -154,10 +159,10 @@
     padding-left: 14px;
     padding-top: 7px;
 
-    @media (max-width: 768px) {    
+    @media (max-width: 1242px) {    
       max-width: 125px;
     }
-    @media (max-width: 400px) {     
+    @media (max-width: 740px) {     
       font-size: 14px;
       line-height: 19px;
       min-width: 263px;
@@ -183,14 +188,14 @@
     padding-bottom: 84px;
     margin-top: 27px;
 
-    @media (max-width: 768px) {    
+    @media (max-width: 1242px) {    
       flex-wrap: nowrap;
       flex-direction: column;
       margin-top: 39px;
       padding-left: 52px;
       margin-left: 59px;
     }
-    @media (max-width: 400px) {       
+    @media (max-width: 740px) {       
       margin-top: 50px;
       padding-left: 52px;
       margin-left: 16px;
@@ -204,7 +209,7 @@
     padding-top: 7px;
     width: 380px;
 
-    @media (max-width: 768px) {  
+    @media (max-width: 1242px) {  
       margin-top: -7px;
       margin-left: -51px;
   }
@@ -220,11 +225,11 @@
     margin-right: 80px;
     transition: all $transition-duration;
 
-    @media (max-width: 768px) {   
+    @media (max-width: 12428px) {   
       margin-top: -45px;
       margin-left: 281px;
   }
-    @media (max-width: 400px) {   
+    @media (max-width: 740px) {   
       font-size: 16px;
       line-height: 22px;
       margin-top: -7px;
@@ -257,12 +262,12 @@
     transition: all $transition-duration;
     overflow: hidden;
 
-    @media (max-width: 768px) {   
+    @media (max-width: 1242px) {   
       margin-left: -51px;
       padding-left: 51px;
       margin-top: 1px;
     }
-    @media (max-width: 400px) {   
+    @media (max-width: 740px) {   
       margin-left: -51px;
       padding-left: 51px;
       margin-top: 1px;
@@ -270,7 +275,7 @@
   &__title {
       padding-right: 25px;
 
-      @media (max-width: 768px) {    
+      @media (max-width: 1242px) {    
         margin-top: 17px;
         margin-left: -52px;
     }
@@ -278,7 +283,7 @@
   &__star {
       overflow: hidden;
       margin: 0 auto;
-      @media (max-width: 768px) {    
+      @media (max-width: 1242px) {    
         margin-top: 8px;
         margin-left: 2px;
     }
@@ -312,7 +317,7 @@
 }
 
 .social {
-@media (max-width: 400px) {   
+@media (max-width: 740px) {   
     display: flex;
   }
   li {
