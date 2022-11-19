@@ -1,12 +1,12 @@
-<header class="header-main container-back">
+<header>
     <div class="header container">   
         <a class="header__logo" href="/">
             <picture>
-                <source srcset="img/logo/logo-mobile_1x.png, img/logo/logo-mobile_2x.png" media="(max-width: 450px)">
-                <source srcset="img/logo/logo-tablet_1x.png, img/logo/logo-tablet_2x.png" media="(max-width: 870px)">
+                <source srcset="img/logo/logo-mobile_1x.png 1x, img/logo/logo-mobile_2x.png 2x" media="(max-width: 450px)">
+                <source srcset="img/logo/logo-tablet_1x.png 1x, img/logo/logo-tablet_2x.png 2x" media="(max-width: 870px)">
                 <source srcset="img/logo/logo_1x.png 1x, img/logo/logo_2x.png 2x">
                 <img src="img/logo/logo_1x.png" class="header__logo-img" alt="logo">        
-            </picture>                     
+            </picture>                   
         </a>
         <nav class="header__menu">
             <ul class="underline header__list">
@@ -46,8 +46,13 @@
     <div class="mobile-header">
         <div class="mobile-header__content">  
             <div class="mobile-header__cap">
-                <a class="mobile-header__logo" href="/" >
-                    <img class="mobile-header__logo-img" srcset="img/logo/logo-mobile_1x.png 1x, img/logo/logo-mobile_2x.png" alt="logo">                    
+                <a class="mobile-header__logo" href="/">
+                    <picture>
+                        <source srcset="img/logo/logo-mobile_1x.png 1x, img/logo/logo-mobile_2x.png 2x" media="(max-width: 450px)">
+                        <source srcset="img/logo/logo-tablet_1x.png 1x, img/logo/logo-tablet_2x.png 2x" media="(max-width: 870px)">
+                        <source srcset="img/logo/logo_1x.png 1x, img/logo/logo_2x.png 2x">
+                        <img src="img/logo/logo_1x.png" class="mobile-header__logo-img" alt="logo">        
+                    </picture>                                         
                 </a>
                 <button class="mobile-header__close mobile-header__close_js" type="button" value="closed"></button>
                 <a href="contact.html"><img src="img/search.png" alt="search" class="mobile-header__search"></a>
@@ -76,7 +81,7 @@
             </nav>
             
             <a href="contact.html" class="mobile-header__contact">Contact Us</a>   
-      </div>    
-   
+        </div> 
+    </div>  
 </header>
 

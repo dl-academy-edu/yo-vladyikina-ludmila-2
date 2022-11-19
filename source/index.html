@@ -48,34 +48,26 @@
             <div class="banner__botton">      
                 <p class="text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
             </div>  
-            <audio class="audio" loop controls="true">
+            <audio class="audio" loop controls>
                 <source src="https://cdn.drivemusic.me/dl/online/SAjf8gXzNsj7z5PK5yFApg/1664433940/download_music/2020/03/fausto-papetti-more.mp3" type="audio/mp3">
                 Ваш браузер не поддерживает элемент audio.
             </audio>                     
-        <section class="products">
+            <section class="products">
                 <h2 class="products__title">Category Products</h2>
                 
                     <ul class="products__list underline row">
-                        @@include('blocks/products.html', {
-                            "link": "#",
-                            "text": "APPAREL KIDS"                        
-                        })
-    
-                        @@include('blocks/products.html', {
-                            "link": "#",
-                            "text": "HOLIDAY SHOP"                        
-                        })
-    
-                        @@include('blocks/products.html', {
-                            "link": "toys.html",
-                            "text": "TOYS"                        
-                        })
-    
-                        @@include('blocks/products.html', {
-                            "link": "#",
-                            "text": "ACCESSORIES"                        
-                        })
-                        
+                        <li class="products__cards col-xl-3 col-lg-4">
+                            <a href="#">APPAREL KIDS</a>
+                        </li>
+                        <li class="products__cards col-xl-3 col-lg-4">
+                            <a href="#">HOLIDAY SHOP</a>
+                        </li>
+                        <li class="products__cards col-xl-3 col-lg-4">
+                            <a href="toys.html">TOYS</a>
+                        </li>
+                        <li class="products__cards col-xl-3 col-lg-4">
+                            <a href="#">ACCESSORIES</a>
+                        </li>
                     </ul>
                
                 <div class="products__pages">
@@ -87,9 +79,9 @@
             </section>
             <section class="delivery">  
                 <picture>
-                    <source srcset="img/woman/woman-mobile_1x.jpg, img/woman/woman-mobile_2x.jpg" media="(max-width: 560px)">
-                    <source srcset="img/woman/woman-tablet_1x.jpg, img/woman/woman-tablet_2x.jpg" media="(max-width: 1060px)">
-                    <source srcset="img/woman/woman_1x.jpg, img/woman/woman_2x.jpg">
+                    <source srcset="img/woman/woman-mobile_1x.jpg 1x, img/woman/woman-mobile_2x.jpg 2x" media="(max-width: 560px)">
+                    <source srcset="img/woman/woman-tablet_1x.jpg 1x, img/woman/woman-tablet_2x.jpg 2x" media="(max-width: 1060px)">
+                    <source srcset="img/woman/woman_1x.jpg 1x, img/woman/woman_2x.jpg 2x">
                     <img class="delivery__image" src="img/woman/woman_1x.jpg" alt="woman">   
                 </picture>                
                                       
@@ -160,52 +152,12 @@
                     
                </div>          
         </section>
-        
+         @@include('blocks/popup.html')  
         
     </main>
     @@include('blocks/footer.html')   
-    <section class="popup">
-        <h2 class="popup__title underline">Window Model</h2>
-        <form class="window-mobel popup__form" action="index.html">
-            <div class="label__wrapper">
-                <label for="input-name" class="label__name" >Name</label>
-                <input type="text" id="input-name" class="input__name" placeholder="Ivan Ivanov">
-            </div>
-            <div class="field-2-column">
-                <div class="label__wrapper">
-                    <label for="input-phone" class="label__phone">Phone</label>
-                    <input type="tel" id="input-phone" class="input__phone">
-                </div>
-                <div class="label__wrapper">
-                    <label for="input-email" class="label__email">Email</label>
-                    <input type="email" id="input-email" class="input__email">
-                </div>
-            </div>
-            <div class="label__wrapper">
-                <label for="textarea" Class="label__message">Message</label>
-                <textarea name="#" id="textarea" cols="30" rows="10" class="input__message"></textarea>
-            </div>
-            <div>
-                <label class="label__wrapper consent">
-                    <input type="checkbox" class="checkbox__input" checked>
-                    <span class="checkbox__label">By clicking on the button, you consent to the processing of your personal data</span>
-                </label>
-            </div>
-            @@include('blocks/button.html', {
-                "class": "button",
-                "type": "submit",
-                "text": "Submit"
-            })
-            
-            <button type="button" class="popup__close">
-                <svg aria-label="close__button" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
-                </svg>
-            </button>
-        </form>        
-    </section>
-    <script src="js/app.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/app.js"></script> 
     
 </body>
-
 </html>

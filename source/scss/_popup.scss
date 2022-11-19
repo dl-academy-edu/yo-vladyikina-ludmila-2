@@ -1,45 +1,7 @@
-.contact {
-    &__title {
-        font-family: $secondary-font;
-        font-weight: 700;
-        font-size: 41px;
-        line-height: 49px;
-        text-transform: uppercase;
-        color: $text-color;
-        margin-top: 56px;
-        margin-bottom: 14px;
-    
-        @media (max-width: 1270px) {
-            font-size: 36px;
-            line-height: 44px;
-            margin-left: 63px;
-            margin-top: 34px;
-        }
-        @media (max-width: 670px) {
-            font-size: 24px;
-            line-height: 29px;
-            margin-left: 18px;
-        }
-    }
-    .contact__wrapper{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 60px;
+/* popup */
 
-        @media (max-width: 1270px) {
-            flex-direction: column;
-            padding-top: 20px;
-            padding-bottom: 50px;
-            align-items: center;
-        }
-        @media (max-width: 670px) {       
-            padding-bottom: 50px;      
-        }
-    }
-}
-
-.contact input, 
-.contact textarea {
+input, 
+textarea {
     background: $secondary;
     border: 1px solid $color-disable;
     font-weight: 400;
@@ -51,32 +13,32 @@
     outline: none;      
 }
 
-.contact input:hover, 
-.contact textarea:hover,
-.contact input:active, 
-.contact textarea:active {
+input:hover, 
+textarea:hover,
+input:active, 
+textarea:active {
     background: $secondary;
     border: 1px solid $color-hover;      
 } 
 
-.contact input:disabled, 
-.contact textarea:disabled {
+input:disabled, 
+textarea:disabled {
     background: $secondary;
     border: 1px solid #EBEBEB;    
 }
 
-.contact textarea {
+textarea {
     max-height: 150px;
 }
 
-.contact label,
-.contact .label__wrapper span {    
+label,
+.label__wrapper span {    
     font-size: 14px;
     line-height: 19px;
     color: #1E0606;   
 }
 
-.contact .label {
+.label {
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -86,31 +48,31 @@
     &__name {
         margin-top: -25px;
         margin-left: -2px;
-        @media (max-width: 1270px) {       
+        @media (max-width: 769px) {       
             margin-left: 15px;
             margin-top: -26px;
         }     
-        @media (max-width: 670px) {       
+        @media (max-width: 500px) {       
             margin-left: -18px;
             margin-top: -44px;
         }      
     }
     &__phone {
         margin-left: -2px;
-        @media (max-width: 1270px) {               
+        @media (max-width: 769px) {               
             margin-left: 16px;
         }  
-        @media (max-width: 670px) {               
+        @media (max-width: 500px) {               
             margin-left: -19px;
             margin-top: -4px;
         }  
     } 
     &__email {        
-        @media (max-width: 1270px) {       
+        @media (max-width: 769px) {       
             margin-left: -14px;
             margin-top: 2px;
         }
-        @media (max-width: 670px) {       
+        @media (max-width: 500px) {       
             margin-left: -18px;
             margin-top: -4px;
         }
@@ -118,11 +80,11 @@
     &__message {
         margin-top: 3px;
         margin-left: -2px;
-        @media (max-width: 1270px) {
+        @media (max-width: 769px) {
             margin-left: 16px;
             margin-top: 1px;
         } 
-        @media (max-width: 670px) {
+        @media (max-width: 500px) {
             margin-left: -18px;
             margin-top: -4px;
         }    
@@ -130,21 +92,21 @@
 }
 
 
-.contact input {
+input {
     margin-left: -3px;   
 }
 
-.contact .input {
+.input {
     &__name {
         width: 600px;
-        @media (max-width: 1270px) {
+        @media (max-width: 769px) {
             font-size: 16px;
             line-height: 19px;
             margin-left: 15px;
             margin-top: 4px;
             width: 536px;
         }    
-        @media (max-width: 670px) {
+        @media (max-width: 500px) {
             font-size: 14px;
             height: 42px;
             line-height: 16px;
@@ -157,12 +119,12 @@
         margin-left: -2px;
         margin-right: 21px;
         width: 290px;   
-        @media (max-width: 1270px) {
+        @media (max-width: 769px) {
             width: 258px;
             margin-left: 15px;
             margin-top: 2px;
         } 
-        @media (max-width: 670px) {   
+        @media (max-width: 500px) {   
             height: 41px;
             margin-left: -17px;
             margin-top: 4px;
@@ -171,11 +133,11 @@
     }
     &__email {        
         width: 290px;
-        @media (max-width: 1270px) {
+        @media (max-width: 769px) {
             margin-left: -14px;           
             width: 258px;
         }  
-        @media (max-width: 670px) {   
+        @media (max-width: 500px) {   
             height: 41px;           
             width: 285px;
         }     
@@ -185,12 +147,12 @@
         margin-left: -3px;
         margin-bottom: 7px;
         width: 600px;
-        @media (max-width: 1270px) {
+        @media (max-width: 769px) {
             margin-left: 15px;
             margin-top: 4px;
             width: 536px;
         }    
-        @media (max-width: 670px) {
+        @media (max-width: 500px) {
             margin-left: -17px;
             margin-top: 5px;
             width: 285px;
@@ -198,31 +160,31 @@
     }
 }
 
-.contact .field-2-column{
+.field-2-column{
     display: flex;
     justify-content: space-between;   
-    @media (max-width: 670px) {
+    @media (max-width: 500px) {
         flex-wrap: wrap;
     }        
 }
   
-.contact .field-2-column .contact .label__wrapper {
+.field-2-column .label__wrapper {
     width: 290px;   
 }
    
-.contact .consent {
+.consent {
     margin-left: -5px;
 
-    @media (max-width: 1270px) {        
+    @media (max-width: 769px) {        
         margin-left: 14px;
     }     
-    @media (max-width: 670px) {        
+    @media (max-width: 500px) {        
         margin-left: -16px;
         margin-top: -9px;
     }
 }     
 
-.contact .checkbox {
+.checkbox {
     &__input {
         display: none;   
     }
@@ -231,12 +193,12 @@
         cursor: pointer;    
         padding-left: 36px;     
     
-        @media (max-width: 1270px) {        
+        @media (max-width: 769px) {        
             margin-right: -53px;
             margin-top: -3px;
             padding-left: 35px;
         }
-        @media (max-width: 670px) {
+        @media (max-width: 500px) {
             padding-left: 27px;
             margin-right: -67px;             
         }
@@ -261,7 +223,7 @@
             top: -3px;
             left: 0;
 
-            @media (max-width: 670px) {
+            @media (max-width: 500px) {
                 width: 14px;
                 height: 14px;
                 top: 1px;
@@ -276,7 +238,7 @@
             left: 4px;
             opacity: 0;
 
-            @media (max-width: 670px) {
+            @media (max-width: 500px) {
                 width: 13px;
                 height: 13px;
                 background-image: url('../img/checkbox-mobile.svg');
@@ -292,82 +254,25 @@
     }
 }
 
-.contact .checkbox__input:checked + .contact .checkbox__label::after {
+.checkbox__input:checked + .checkbox__label::after {
     opacity: 1;
 }
 
-.contact .checkbox__input:disabled + .contact .checkbox__label,
-.contact .checkbox__input:disabled + .contact .checkbox__label::before {
+.checkbox__input:disabled + .checkbox__label,
+.checkbox__input:disabled + .checkbox__label::before {
     color: #908484;  
     text-decoration-line: none;  
     cursor: none;   
 }
 
-.help {
-    margin-left: 43px;
-    margin-top: -16px;
-    @media (max-width: 1270px) {        
-        margin: 0 auto;
-        padding-bottom: 47px;
-        padding-left: 0;
-        padding-top: -6px;
-        text-align: center;     
-    }
-    span {
-        font-family: $secondary-font;    
-        font-weight: 600;
-        font-size: 26px;
-        line-height: 34px;
-        text-transform: uppercase;
-        color: $color-hover;  
 
-        @media (max-width: 1270px) {     
-            margin-left: 20px;
-        }  
-        @media (max-width: 670px) {     
-            font-size: 25px;
-            line-height: 34px;
-            margin-left: 25px;
-            margin-right: -13px;
-        }  
-    }
-    &__text1 {
-        @media (max-width: 1270px) {        
-            width: 75%;
-            margin-left: 104px;
-        }
-        @media (max-width: 670px) {        
-            font-size: 14px;
-            line-height: 19px;    
-            margin-left: 22px;
-            margin-top: -3px;
-            width: 92%;
-        }
-    }
-    &__text2 {
-        margin-top: 19px;
-        margin-bottom: 19px;
-        @media (max-width: 1270px) {  
-            margin-left: 120px;
-            width: 71%;
-        }
-        @media (max-width: 670px) {        
-            font-size: 14px;
-            line-height: 19px;
-            margin-left: 21px;
-            margin-top: 1px;
-            width: 92%;
-            margin-bottom: 15px;
-        }
-    }
-}
 
-.contact__form .button {
-    @media (max-width: 1270px) {        
+.popup__form .button {
+    @media (max-width: 769px) {        
         margin-left: 15px;
         margin-top: 2px;
     }      
-    @media (max-width: 670px) {   
+    @media (max-width: 500px) {   
         font-size: 14px;
         line-height: 19px;
         margin-left: -18px;
@@ -375,32 +280,48 @@
     }      
 }
 
-.contact .breadcrumbs__next-2 {
+
+
+
+.window-mobel {
+    @media (max-width: 769px) {        
+        top: -83px;
+        right: 60px;        
+    }
+    @media (max-width: 400px) {      
+        padding-left: 3px;
+        top: -313px;
+        right: 70px;
+    }
+}
+
+.popup {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(125, 151, 218, 0.8);
+    bottom: 0;
+    z-index: 2;
     display: none;
-}
+    align-items: center;
+    justify-content: center;
 
-.contact .breadcrumbs {
-    @media (max-width: 1270px) {        
-        margin-left: 63px;
-        margin-top: -5px;
-    }  
-    @media (max-width: 670px) {        
-        margin-left: 19px;
-        margin-top: -3px;
+    @media (max-width: 769px) {        
+        max-width: 768px;  
     }
-}  
-
-.contact .breadcrumbs__disable {
-    @media (max-width: 670px) {        
-        margin-left: -14px;
-        margin-top: -1px;
+    @media (max-width: 400px) {      
+        width: 403px;     
     }
-}
-
-
-
-
-.contact {
+    &__open {
+        display: flex;
+    }
+    &__title {
+        font-size: 0;
+        width: 0;
+        height: 0
+    }
+     ;
     &__form {
         width: 680px;
         background: #E5EAF8;
@@ -408,18 +329,17 @@
         position: relative;
         margin-right: 75px;
         margin-bottom: 2px;
-        @media (max-width: 1270px) {
-            margin-left: 60px;
+        @media (max-width: 769px) {
+            margin-left: 200px;
             order: 1;
             width: 648px;
             margin-bottom: -63px;
         }
-        @media (max-width: 670px) {
+        @media (max-width: 500px) {
             height: 555px;
             margin-top: -19px;
             width: 335px;
             margin-bottom: -61px;
-            margin-left: 74px;
         }
     }
     &__close {
@@ -442,6 +362,4 @@
         } 
     }
 }
-
-
 

@@ -6,7 +6,10 @@
     padding: 49px 20px 36px;
   
   @media (max-width: 1265px) {
-    padding: 25px 8% 31px;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 86px;
+    padding-bottom: 20px;
   }
   @media (max-width: 375px) {
     margin: 0;
@@ -148,13 +151,13 @@
 // mobile-header
 
 .mobile-header {
-    z-index: 1;
-    position: fixed;
+    z-index: 14;
+    position: fixed;    
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    width: 100%;
+    width: 100%;   
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -165,9 +168,10 @@
   
     @media (max-width: 870px) {
       display: initial;
-    }
+    } 
   
     &__open {
+      display: block;
       transform: translateX(0);
     }
   
@@ -175,8 +179,11 @@
       background-color:$secondary;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
       min-height: 400px;
-      padding: 25px 8%;
-    }
+      padding-top: 20px;
+      padding-left: 40px;
+      padding-right: 185px;
+      padding-bottom: 20px;
+    }     
   
     &__logo {
       &-img {
@@ -234,15 +241,20 @@
     &__cap {
       display: flex;
       position: relative;  
-      justify-content: space-between;
-  
+      justify-content: space-between; 
+
+      @media (max-width: 768px) {
+        display: flex;        
+        justify-content: space-between;
+      }
+      
       @media (max-width: 375px) {
         display: flex;
         padding-right: 10px;
         justify-content: space-between;
       }
     }
-  
+     
     &__list {
       display: flex;
       flex-direction: column;
@@ -274,7 +286,7 @@
     }
   }
 
-
+  
 
 
 

@@ -9,13 +9,13 @@
         margin-top: 56px;
         margin-bottom: 14px;
     
-        @media (max-width: 768px) {
+        @media (max-width: 960px) {
             font-size: 36px;
             line-height: 44px;
             margin-top: 35px;
             margin-left: 62px;
         }
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             font-size: 24px;
             line-height: 29px;
             margin-top: 11px;
@@ -24,21 +24,21 @@
     }
     &__delivery {
         margin-right: 7px;
-        @media (max-width: 768px) {
+        @media (max-width: 960px) {
             margin-left: 72px;
             margin-top: -13px;
             margin-right: -65px;
         }
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             margin-top: 5px;
             margin-right: -17px;
         }
         legend {
-            @media (max-width: 768px) {
+            @media (max-width: 960px) {
                 padding-top: 3px;    
                 margin-bottom: 14px;
             }
-            @media (max-width: 376px) {
+            @media (max-width: 650px) {
             padding-top: 5px;
             margin-bottom: 12px;
             margin-left: 9px;
@@ -52,25 +52,25 @@
     margin-bottom: 51px;
     margin-left: 2px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
         margin-bottom: 30px;
         margin-left: 61px;
         margin-top: -4px; 
     }
-    @media (max-width: 376px) {            
+    @media (max-width: 650px) {            
         margin-left: 18px;
         margin-bottom: 22px;
     }
 } 
 
 .toys .breadcrumbs__next-2 {
-    @media (max-width: 376px) {            
+    @media (max-width: 650px) {            
         margin-left: -13px;       
     }
 }
 
 .toys .breadcrumbs__disable {
-    @media (max-width: 376px) {            
+    @media (max-width: 650px) {            
         margin-left: -13px;       
 }
 }
@@ -81,13 +81,13 @@
 
 .choice {
     background: #7D97DA33;  
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
-    @media (max-width: 768px) {
-        width: 768px;
+    @media (max-width: 950px) {
+        max-width: 768px;
     }
-    @media (max-width: 376px) {
-        width: 375px;
+    @media (max-width: 650px) {
+        max-width: 375px;
     }
    &__wrapper {   
         display: flex;
@@ -95,11 +95,12 @@
         align-items: flex-start;  
         padding: 40px 85px 27px 0px;
         margin-bottom: -22px;
-        @media (max-width: 768px) {
+
+        @media (max-width: 950px) {
             width: 648px;
            flex-wrap: wrap;
         }
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             width: 375px;       
         }  
         legend {
@@ -109,11 +110,11 @@
             line-height: 22px;  
             color: $text-color; 
             margin-bottom: 14px;   
-            @media (max-width: 768px) {
+            @media (max-width: 950px) {
                 margin-left: -1px;
                 margin-bottom: 19px;
             } 
-            @media (max-width: 376px) {
+            @media (max-width: 650px) {
                 font-size: 14px;
                 line-height: 19px;        
             }
@@ -126,11 +127,11 @@
         line-height: 22px;  
         color: $text-color; 
         margin-bottom: 14px;   
-        @media (max-width: 768px) {
+        @media (max-width: 950px) {
             margin-left: 1px;
             margin-top: 5px;
         }
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             font-size: 14px;
             line-height: 19px;
             margin-left: 1px;
@@ -142,11 +143,11 @@
         margin-top: -13px;
         width: 207px; 
         margin-right: 36px;
-        @media (max-width: 768px) {
+        @media (max-width: 950px) {
             margin-left: 60px;
             margin-top: -15px;
         }  
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
         margin-left: 17px;
         margin-top: -13px;
         }
@@ -159,7 +160,7 @@
         justify-content: space-between;
         margin-top: 30px;
         position: relative;
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             margin-right: 2px;
             font-size: 14px;
             line-height: 19px;
@@ -227,7 +228,7 @@ fieldset {
     li {
         margin-bottom: 15px;
 
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
           margin-bottom: 7px;  
         }
     }
@@ -237,31 +238,31 @@ fieldset {
     width: 85px;
     margin-right: 58px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 950px) {
         margin-left: -9px;
         margin-top: -10px;
         margin-right: -33px;
     }
-    @media (max-width: 376px) {
+    @media (max-width: 650px) {
         margin-left: 18px;
         margin-top: 10px;
         margin-right: -35px;
     }
     legend {
-        @media (max-width: 768px) {
+        @media (max-width: 950px) {
             margin-left: -1px;        
             margin-bottom: 14px;
         }   
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             margin-left: -1px;        
             margin-bottom: 14px;
         }           
     }
     &__link {
-        @media (max-width: 768px) {
+        @media (max-width: 950px) {
             margin-left: 2px;        
         }       
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
         margin-top: -5px;      
         }       
     }
@@ -292,7 +293,7 @@ fieldset {
         top: 0;
         left: 0; 
 
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             width: 13x;
             height: 13px;
         } 
@@ -320,7 +321,7 @@ fieldset {
         top: 0;
         left: 0;
 
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             width: 13px;
             height: 13px;
             top: -1px;
@@ -337,7 +338,7 @@ fieldset {
         left: 4px;
         opacity: 0;
 
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             width: 5px;
             height: 5px;
             top: 3px;
@@ -423,7 +424,7 @@ fieldset {
 
 .amount .number1 {
     padding: 7px 28px 6px 28px;  
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
      margin-top: 1px;   
     }  
 }
@@ -431,7 +432,7 @@ fieldset {
 .amount .number2,
 .amount .number3 {
     padding: 7px 19px 6px 19px;
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
         padding-left: 24px;
         padding-top: 7px;
     }  
@@ -441,22 +442,22 @@ fieldset {
     &__link {
         display: flex;  
         margin-top: 10px;   
-        @media (max-width: 768px) {
+        @media (max-width: 950px) {
             margin-left: 63px;
             margin-top: 12px;
         }
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
         margin-left: 19px;
         margin-top: 11px;
         }
     }
     legend {
-        @media (max-width: 768px) {
+        @media (max-width: 950px) {
             padding-top: 7px;
             margin-bottom: 7px;
             padding-left: 61px;
         }
-        @media (max-width: 376px) {
+        @media (max-width: 650px) {
             padding-top: 21px;
             margin-bottom: 1px;
             padding-left: 18px;
@@ -469,11 +470,11 @@ fieldset {
     margin-top: 33px;
 }
 .choice .button {
-    @media (max-width: 768px) {
+    @media (max-width: 950px) {
         margin-top: 39px;
         margin-right: -43px;
 }
-@media (max-width: 376px) {
+@media (max-width: 650px) {
     margin-top: 25px;    
     margin-left: 138px;
     margin-bottom: -2px;
@@ -492,20 +493,20 @@ fieldset {
         flex-wrap: wrap;
         margin-top: 83px;
         li {
-            width: 380px;  
+            max-width: 380px;  
             margin-right: 20px;
             margin-bottom: 28px;
             text-align: center;
             text-transform: uppercase;
-            @media (max-width: 768px) {
-                width: 203px;
+            @media (max-width: 950px) {
+                max-width: 203px;
                 margin-left: 62px;
                 margin-right: -42px;
                 margin-top: -16px;
                 margin-bottom: 32px;
             }
             @media (max-width: 712px) {
-                width: 160px;
+                max-width: 160px;
                 margin-left: 18px;
                 margin-right: -1px;
                 margin-top: -21px;
@@ -522,7 +523,7 @@ fieldset {
             font-size: 14px;
             line-height: 69px;    
             color: $text-color;  
-            @media (max-width: 768px) {
+            @media (max-width: 950px) {
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 16px;
@@ -534,7 +535,7 @@ fieldset {
             line-height: 22px;    
             color: $text-color;
             margin-top: -8px;
-            @media (max-width: 768px) {
+            @media (max-width: 950px) {
                 font-size: 14px;
                 line-height: 19px;
             } 
@@ -583,7 +584,7 @@ fieldset {
 }
 
 .toys-link__title {
-    @media (max-width: 768px) {
+    @media (max-width: 950px) {
         margin-top: 13px;
         margin-bottom: 13px;
     } 
