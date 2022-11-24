@@ -543,8 +543,8 @@ fieldset {
                 font-size: 12px;
                 line-height: 16px;
             } 
-        }
-        &__group {
+        }}
+    &__group {
             position: relative;
             a::after {
                 position: absolute;
@@ -575,7 +575,7 @@ fieldset {
             }
         }
     }
-}
+
 
 .group__title {
     font-size: 0;
