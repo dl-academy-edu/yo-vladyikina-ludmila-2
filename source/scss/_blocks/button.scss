@@ -1,0 +1,33 @@
+.button {
+    background: $color-primary;
+    color: $secondary;
+    font-weight: 700; 
+    font-size: 16px;
+    line-height: 22px;   
+    text-transform: uppercase;
+    border: none;    
+    cursor: pointer;
+    padding: 9px 22px 9px 22px; 
+    margin-top: 4px;
+    margin-left: -3px;
+    margin-bottom: -11px;
+    transition: all $transition-duration;   
+    @media (max-width: 400px) {    
+      font-size: 14px;
+      line-height: 19px;
+      padding: 9px 20px 9px 20px; 
+    }   
+    &:hover {
+        background: $color-hover;
+    }
+    &:active {
+        background: $color-active;
+    }
+    
+    &:disabled {
+        background: $color-disable;
+    }
+}
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Catalog / Designe Life Kids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap"
+		rel="stylesheet">   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="desciption" content="catalog products. Apparel kids. Holiday shop. Toys. Accesseories. Sale. Apparel adults">
+    <meta name="keywords" content="apparel kids, holiday shop, toys, accesseories, sale products, apparel adults">
+</head>
+
+<body>
+    @@include('blocks/header.html')
+    <main class="container">            
+        <section class="catalog">
+            <h2 class="catalog__title">Category Products</h2>
+            @@include('blocks/breadcrumbs.html', {
+                "text": "",
+                "text-2": "Catalog"
+            })
+            
+            <div class="catalog__wrapper">
+                <ul class="row catalog-list underline">
+                    <li class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a class="catalog-list__kids" href="#">APPAREL KIDS</a>
+                    </li>
+                    <li class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a class="catalog-list__shop" href="#">HOLIDAY SHOP</a>
+                    </li>
+                    <li class="col-xl-3 add-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a class="catalog-list__toys" href="toys.html">TOYS</a>
+                    </li>
+                    <li class="col-xl-3 skip-xl-2 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a class="catalog-list__accessories" href="#">ACCESSORIES</a>
+                    </li>
+                    <li class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a class="catalog-list__sale" href="#">SALE</a>
+                    </li>
+                    <li class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                        <a class="catalog-list__adults" href="#">APPAREL ADULTS</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+        <section class="product">
+            <h2 class="product__title">Product Description</h2>
+            <p class="product__text1">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can
+                even bathe her, just like a little sister.</p>
+            <p class="product__text2">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be
+                an excellent choice for a gift for a girl from 4 years old.</p>
+            <p class="product__text3">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
+                hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young
+                mistress.</p>
+        </section>
+    </main>
+    @@include('blocks/footer.html') 
+    <script src="js/menu.js"></script>
+</body>
+</html>

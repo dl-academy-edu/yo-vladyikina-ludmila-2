@@ -1,0 +1,23 @@
+.button {
+    background: $color-primary;
+    color: $secondary;
+    font-weight: 700; 
+    font-size: 16px;
+    line-height: 22px;   
+    text-transform: uppercase;
+    border: none;    
+    cursor: pointer;
+    padding: 9px 22px 9px 22px;   
+    transition: all $transition-duration;    
+    &:hover {
+        background: $color-hover;
+    }
+    &:active {
+        background: $color-active;
+    }
+    
+    &:disabled {
+        background: $color-disable;
+    }
+}
+

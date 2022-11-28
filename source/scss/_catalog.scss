@@ -1,0 +1,362 @@
+.catalog {
+    &__title {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: $text-color;
+        
+        @media (max-width: 1270px) {
+            font-size: 36px;
+            line-height: 44px;
+            margin-left: 58px;
+            margin-top: 33px;
+            margin-bottom: 9px;
+        }
+        @media (max-width: 743px) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-left: 19px;
+            margin-top: 12px;
+        }
+    }
+    &__wrapper {
+        align-content: flex-start;
+    }
+}
+
+.catalog__wrapper .row {
+   
+    @media (max-width: 1270px) {
+        padding-left: 8%;
+        padding-right: 0%;  
+    }
+    @media (max-width: 743px) {      
+      margin-right: -31px;
+      padding-left: 17px;
+    }
+}
+
+.catalog-list {
+    &__kids {
+        @media (max-width: 1270px) {        
+            margin-left: 0px;
+            margin-top: -21px;    
+        }
+        @media (max-width: 743px) {        
+            margin-left: 2px;
+            margin-top: -7px;  
+        }
+    }
+    &__shop {
+        @media (max-width: 1270px) {        
+            margin-left: 0px;
+            margin-top: -21px;    
+        }
+        @media (max-width: 743px) {        
+            margin-left: -6px;
+            margin-top: -7px;
+        }
+    }
+    &__toys {
+        @media (max-width: 1270px) {   
+            margin-top: -11px;
+            margin-left: -7px;
+        }
+        @media (max-width: 743px) {        
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+    }
+    &__accessories {
+        @media (max-width: 1270px) {   
+            margin-top: -12px;
+            margin-left: -62px;
+    }
+    @media (max-width: 743px) {        
+        margin-left: -24px;
+        margin-top: 1px;
+    }
+    }
+    &__sale {
+        @media (max-width: 1270px) {  
+            margin-top: -12px;
+            margin-left: -4px;
+    }
+    @media (max-width: 743px) {        
+        margin-left: 6px;
+        margin-top: -1px;
+    }
+    }
+    &__adults {
+        @media (max-width: 1270px) {  
+            margin-left: -2px;
+            margin-top: -19px;
+    } 
+    @media (max-width: 743px) {        
+        margin-left: -7px;
+        margin-top: -12px; 
+    }   
+    }
+    li {
+        margin-right: 20px;
+        margin-bottom: 23px;
+        padding: 100px 75px;
+        width: 280px;
+        height: 270px;   
+        @media (max-width: 1270px) {
+            height: 196px;
+            width: 203px;
+            font-size: 24px;
+            line-height: 29px;   
+        }
+        @media (max-width: 743px) {            
+            font-size: 18px;
+            height: 154px;
+            line-height: 22px;
+            margin-bottom: 15px;
+            margin-top: -2px;
+            width: 160px;
+        }
+    }
+    a {
+        display: block;
+        font-family: $secondary-font;    
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $secondary;
+        text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+
+        @media (max-width: 1081px) {
+            font-size: 24px;
+            line-height: 29px;   
+        }
+        @media (max-width: 743px) {
+            font-size: 18px;
+            line-height: 22px;  
+        }
+    }
+    a:hover,
+    a:active {
+        text-decoration-line: underline;
+    }
+    li:nth-child(1) {
+        background: #DBE4DB;    
+        background-image: url('../img/products/kids.png');
+        background-blend-mode: multiply; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+    
+        @media (max-width: 1270px) {
+            background-image: url('../img/products/kids-tablet.png');  
+            padding: 97px 42px;
+        }
+        @media (max-width: 743px) {
+            background-image: url('../img/products/kids-mobile.png');  
+            padding: 69px 34px;
+        }
+    }
+    li:nth-child(2) {
+        background: #EADDD3;    
+        background-image: url('../img/products/shop.png');
+        background-position: center;
+        background-repeat: no-repeat;  
+    
+        @media (max-width: 1270px) {
+            background-image: url('../img/products/shop-tablet.png');  
+            padding: 97px 42px;
+        }
+        @media (max-width: 743px) {
+            background-image: url('../img/products/shop-mobile.png');  
+            padding: 69px 34px;
+        }
+    }
+    li:nth-child(3) {
+        background: #F8F2DA;    
+        background-image: url('../img/products/toys.png');
+        background-position: center;
+        background-repeat: no-repeat; 
+    
+        @media (max-width: 1270px) {
+            background-image: url('../img/products/toys-tablet.png'); 
+            padding: 97px 42px;         
+        }
+        
+        @media (max-width: 743px) {
+            background-image: url('../img/products/toys-mobile.png'); 
+            padding: 69px 34px; 
+            margin-top: 2px;
+        }
+        @media (max-width: 742px) {
+            margin-right: 42px;
+        }
+        @media (max-width: 563px) {
+            margin-right: 20px;
+        }
+    }
+    li:nth-child(4) {
+        background: #D5D4E1; 
+        background-image: url('../img/products/accessories.png');
+        background-position: center;
+        background-repeat: no-repeat;  
+        margin-left: 150px; 
+    
+        @media (max-width: 1270px) {         
+            background-image: url('../img/products/accessories-tablet.png');  
+            margin-left: 0;           
+            padding: 97px 67px;
+        }   
+        
+        @media (max-width: 986px) {         
+            margin-top: -8px;
+        }    
+        @media (max-width: 743px) {
+            background-image: url('../img/products/accessories-mobile.png');  
+            padding: 69px 34px;
+            margin-top: 2px;
+        }
+
+        
+    }
+    li:nth-child(5) {
+        background: #F3D0DB; 
+        background-image: url('../img/products/sale.png');
+        background-blend-mode: multiply;
+        background-position: center;
+        background-repeat: no-repeat; 
+    
+        @media (max-width: 1270px) {
+            background-image: url('../img/products/sale-tablet.png');  
+            margin-top: -8px;
+            padding: 97px 42px;
+        }
+        @media (max-width: 743px) {
+            background-image: url('../img/products/sale-mobile.png');  
+            padding: 69px 34px;
+            margin-top: 4px;
+        }
+    }
+    li:nth-child(6) {
+        background: #E5EAF8;     
+        background-image: url('../img/products/adults.png');
+        background-blend-mode: multiply;
+        background-position: center;
+        background-repeat: no-repeat;  
+    
+        @media (max-width: 1270px) {
+            background-image: url('../img/products/adults-tablet.png');  
+            padding: 97px 42px;
+            margin-top: -8px;
+        }
+        @media (max-width: 743px) {
+            background-image: url('../img/products/adults-mobile.png');  
+            padding: 69px 34px;
+            margin-top: 4px;
+        }
+    }
+}
+
+.product {
+    padding-left: 140px; 
+    padding-right: 140px;   
+    margin-top: -22px;
+    margin-bottom: 55px;
+    &__title {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: $text-color;
+        @media (max-width: 1271px) {
+            font-size: 36px;
+            line-height: 44px;
+            font-size: 36px;
+            line-height: 44px;        
+            margin: 37px -5px 19px -46px;
+        }
+        @media (max-width: 986px) {
+            margin-left: -63px;
+            
+        }
+        @media (max-width: 776px) {
+            margin-right: -140px;
+            margin-left: -80px;
+            
+        }
+        @media (max-width: 743px) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-left: -122px;
+            margin-top: 36px;
+            margin-right: -74px;
+        }
+        @media (max-width: 407px) {            
+            margin-left: -121px;
+            margin-top: 36px;
+            margin-right: -108px;
+        }
+    }
+    p {
+        width: 74%;        
+        
+        @media (max-width: 1270px) {
+            margin-left: -45px;           
+        }
+        @media (max-width: 1140px) {              
+            width: 100%;          
+        }
+        @media (max-width: 986px) {             
+            margin-left: -62px;         
+        }
+        @media (max-width: 769px) {             
+            margin-left: -77px;   
+            width: 129%;      
+        }
+        @media (max-width: 742px) { 
+            margin-left: -121px;                 
+        }
+        @media (max-width: 527px) {                    
+            width: 170%;      
+        }
+        @media (max-width: 470px) {                    
+            width: 210%;      
+        }
+        @media (max-width: 400px) {                    
+            width: 300%;      
+        }
+        @media (max-width: 376px) {                    
+            width: 372%;      
+        }      
+       
+    }
+}
+
+
+.catalog .breadcrumbs__next-2 {
+    display: none;
+}
+
+.catalog .breadcrumbs {
+    @media (max-width: 1200px) {
+        margin-left: 58px;
+        margin-top: 11px;
+        margin-bottom: 27px;   
+    }
+    @media (max-width: 743px) {
+        margin-bottom: 20px;
+        margin-left: 18px;
+        margin-top: 9px;
+    }
+}
+
+.catalog .breadcrumbs__disable {
+    @media (max-width: 743px) {
+        margin-left: -12px;
+        margin-top: -1px;
+    }
+}

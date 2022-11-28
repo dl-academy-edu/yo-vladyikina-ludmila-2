@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grid/Designe Life Kids</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap"
+            rel="stylesheet">    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <meta name="desciption" content="IPHONE 6S 3D Touch, 12MP photos, 4K video.How to Use Rotary Evaporator in Chemical Labs.New Keyboard. Apple may be experimenting in the virtual reality space. iCloud the latest versions.Games ourpasion. More than just a display, it’s a vision.">
+        <meta name="keywords" content="IPHONE 6S, Rotary Evaporator, Brand New Keyboard, IMAC.RETINA, apple, icloud, Games ourpasion, tv">
+</head>
+
+<body>
+        @@include('blocks/header.html')
+        <main>
+                <section class="grad__wrapper container">
+                        <h2 class="grid__title">Grid</h2>
+                        @@include('blocks/breadcrumbs.html', {
+                            "text": "",
+                            "text-2": "Grid"
+                        })
+                     
+                </section>
+                <section>
+                        <div class="grid">
+                                <div class="grid-box phone">
+                                    <div class="phone__content">
+                                        <span class="phone__text">IPHONE 6S</span>
+                                        <h3 class="phone__title">3D Touch. 12MP photos. 4K video. One powerful phone</h3>
+                                        <a class="phone__link" href="#">Learn more or visit an Apple Store today</a>
+                                    </div>
+                                    <img class="phone__image" src="img/grid/phone.png" alt="phone"> 
+                                </div>
+                                
+                                <div class="grid-box evaporator">
+                                    <div class="evaporator__content">
+                                        <a class="evaporator__link" href="">LEARN MORE</a>
+                                        <h3 class="evaporator__title">How to Use Rotary Evaporator in Chemical Labs</h3>
+                                        <button class="evaporator__button" type="button">Download now</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid-box keyboard">
+                                    <div class="keyboard__content">
+                                        <img class="keyboard__img" src="img/grid/keyboard.png" alt="keyboard">
+                                        <h3 class="keyboard__title">Our Brand New Keyboard</h3>
+                                        <a class="keyboard__link" href="#">LEARN &#8250;</a>
+                                    </div>
+                                </div>
+                
+                                <div class="grid-box apple">
+                                    <div class="apple__block">
+                                        <a class="apple__link" href="#">IMAC.RETINA</a>
+                                        <h3 class="apple__title">Hardly a month passes these days where</h3>
+                                        <img class="apple__img" src="img/grid/computer.png" alt="computer">
+                                    </div>
+                
+                                    <div class="apple__description">
+                                        <p class="apple__text">Apple may be experimenting in the virtual reality space. The company has been granted 
+                                            a patent for a head-mounted virtual reality device that would use the iPhone screen as the display.</p>
+                                        <button class="apple__button" type="button">DOWLOAD NOW &#8250;</button>
+                                    </div>
+                                </div>
+                
+                                <div class="grid-box icloud">
+                                    <div class="icloud__content"> 
+                                        <img class="icloud__img" src="img/grid/discate.png" alt="discate">
+                                        <h2 class="icloud__title">iCloud</h2>
+                                        <p class="icloud__text">With iCloud, you always have the latest versions of your most important things — 
+                                            like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+                                        <a class="icloud__link" href="#">LEARN MORE</a>
+                                    </div>
+                                </div>
+                
+                                <div class="grid-box noutbook">
+                                    <label class="noutbook__lable">BEST CHOICE</label>
+                                    <h3 class="noutbook__title">Much MuchBetter Experience</h3>
+                                    <img class="noutbook__img" src="img/grid/noutbook.png" alt="noutbook">
+                                </div>
+                
+                                <div class="grid-box games">
+                                    <div class="games__content">
+                                        <img class="games__img" src="img/grid/joystick.png" alt="joystick">
+                                        <h3 class="games__title">Games ourpasion</h3>
+                                        <a class="games__link" href="">LEARN &#8250;</a>
+                                    </div>
+                                </div>
+                
+                                <div class="grid-box instagram">
+                                    <div class="instagram__content">
+                                        <img class="instagram__img" src="img/grid/instagram-icon.png" alt="instagram-icon">
+                                        <a class="instagram__link" href="#">Follow me &#8250;</a>
+                                    </div>
+                                </div>
+                
+                                <div class="grid-box tv">
+                                    <img class="tv__img" src="img/grid/television.png" alt="television">
+                                    <h3 class="tv__title">More than just a display, it’s a vision</h3>
+                                </div>
+                            </div>
+                     
+                </section>
+        </main>
+        @@include('blocks/footer.html') 
+        <script src="js/menu.js"></script>
+</body>
+</html>

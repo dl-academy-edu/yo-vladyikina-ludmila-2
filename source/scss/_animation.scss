@@ -1,0 +1,335 @@
+@keyframes Clouds {
+    0% {
+        left: -20px;
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;       
+    }
+    10%, 30%, 50%, 70% {
+        transform: translateY(10px) scale(1.2);
+    } 
+    20%, 40%, 60%, 80% {
+        transform: translateY(-10px) scale(0.9);
+    }     
+    92% {
+        opacity: 0.8;
+        transform: rotate(1deg) scale(1);
+    }
+    94% {
+        opacity: 0.6;
+    }
+    96% {
+        opacity: 0.4;
+    }
+    98% {
+        opacity: 0.2;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes Cars {
+    0% {
+        left: -20%;
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes Handwomen {
+  
+    0%, 100% {
+      transform: rotate(0deg);      
+    } 
+    17%{
+      transform: rotate(-45deg);
+    }
+}
+
+@keyframes Taxi {
+    0% {
+        right: -500px;
+        opacity: 1;
+    }
+    20%, 50% {
+        right: 25%;
+    }
+    100% {
+        right: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes Handman {
+    0% {
+        opacity: 1;
+        transform: rotateZ(140deg);    
+    }
+    40%, 90% {
+        transform: rotateZ(140deg);  
+    }
+    50% {
+        transform: rotateZ(0deg);     
+    }
+    100% {
+        transform: rotateZ(140deg);  
+        opacity: 1;
+    }
+}
+@keyframes Message {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.animation {
+    &__title{
+        font-family: $secondary-font;    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase; 
+        color: $text-color; 
+
+        @media (max-width: 768px) {
+            font-size: 36px;
+            line-height: 44px;
+            margin-left: 63px;
+            margin-top: 34px;
+            
+        }
+        @media (max-width: 376px) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-left: 18px;
+            margin-top: 11px;
+            
+          }
+        }
+    &__wrapper {    
+        height: 44.8vw;
+        max-height: 768px;       
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 67px;
+    }
+    &__cloudsmall {
+        position: absolute;
+        width: 7%;
+        height: 6%;
+        opacity: 0;
+        z-index: 2;
+        &:nth-child(1) {
+            top: 1%;
+            animation: Clouds 38s infinite linear 25s;
+        }        
+        &:nth-child(2) {
+            top: 6%;
+            animation: Clouds 38s infinite linear;
+        }
+    }
+    &__cloudbig {
+        position: absolute;
+        width: 11%;
+        height: 6%;
+        opacity: 0;
+        z-index: 2;
+        &:nth-child(3) {
+            top: 9%;
+            animation: Clouds 38s infinite linear 20s;
+        }
+        &:nth-child(4) {
+            top: 0%;
+            animation: Clouds 38s infinite linear 15s;
+        }
+        &:nth-child(5) {
+            top: 13%;
+            animation: Clouds 38s infinite linear 10s;
+        }
+        &:nth-child(6) {
+            top: 11%;
+            animation: Clouds 38s infinite linear 5s;
+        }
+    }
+    &__sun {
+        position: absolute;
+        width: 4%;
+        height: 8%;
+        right: 15%;
+        top: 2%;
+        z-index: 2; 
+    }
+    &__city {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        bottom: 0;
+        z-index: 1;
+    }
+    &__lanternsleft,
+    &__lanternsright {
+        position: absolute; 
+        width: 11%;
+        height: 51%;
+        z-index: 6; 
+    }
+    &__lanternsleft {   
+       left: 37%;
+       top: 27%;   
+    }
+    &__lanternsright {
+        right: 11%;
+        top: 27%;   
+    }
+    &__lanternslight {
+        position: absolute;
+        width: 15%;
+        height: 72%;
+        top: 22%;
+        right: 20%;
+        z-index: 10;
+    }
+    &__car {
+        position: absolute;
+        opacity: 0;
+        &:nth-child(11) {
+            width: 19%;
+            height: 13%;
+            top: 59%;
+            z-index: 4;
+            animation: Cars 13s infinite linear 12s;
+        }
+        &:nth-child(12) {
+            width: 17%;
+            height: 11%;
+            top: 58%;
+            z-index: 3;
+            animation: Cars 11s infinite linear 8s;
+        }
+        &:nth-child(13) {
+            width: 15%;
+            height: 10%;
+            top: 58%;
+            z-index: 2;
+            animation: Cars 10s infinite linear 4s;
+        }
+        &:nth-child(14) {
+            width: 20%;
+            height: 16%;
+            top: 58%;
+            z-index: 5;
+            animation: Cars 13s infinite linear;
+        }
+    }
+    &__woman {
+        position: absolute;
+        width: 13%;
+        height: 40%;
+        left: 20%;
+        bottom: 0;
+        z-index: 10;
+    }
+    &__man {
+        position: absolute;
+        width: 14%;
+        height: 50%;
+        left: 31%;
+        bottom: 0;
+        z-index: 9;
+    }
+    &__handwoman {
+        position: absolute;
+        max-width: 4%;
+        width: 4vw;
+        left: 25%;
+        bottom: 12%;
+        z-index: 8;   
+        animation: Handwomen 11s infinite ease-in-out 2s;
+        transform-origin: 10px 10px;
+    }
+    &__handman {
+        position: absolute;
+        width: 7%;
+        height: 16%;
+        left: 32%;
+        bottom: 37%;
+        z-index: 8;
+        opacity: 0;
+        animation: Handman 11s infinite ease-in-out;
+        transform-origin: 13% 90%;
+    }
+    &__taxi {
+        position: absolute;
+        width: 37%;
+        height: 35%;
+        right: 0;
+        bottom: 12%;
+        z-index: 7;
+        opacity: 0;
+        animation: Taxi 11s infinite ease 6s;
+    }
+    &__message {
+        position: absolute;
+        z-index: 11;
+        opacity: 0;
+        &:nth-child(21) {
+            width: 10%;
+            bottom: 34%;
+            left: 22%;  
+            animation: Message 11s infinite 3s;
+        }
+        &:nth-child(22) {
+            width: 10%;
+            bottom: 50%;
+            left: 33%;
+            animation: Message 11s infinite 5s;
+        }
+        &:nth-child(23) {
+            width: 10%;
+            bottom: 42%;
+            left: 45%;
+            animation: Message 11s infinite 8s;
+        }
+        &:nth-child(24) {
+            width: 10%;
+            bottom: 50%;
+            left: 33%;
+            animation: Message 11s infinite 9s;
+        }
+    } 
+}
+
+.animation .breadcrumbs__next-2 {
+    display: none;
+}
+
+.animation .breadcrumbs {
+    @media (max-width: 769px) {        
+        margin-left: 60px;
+        margin-top: -21px;
+        margin-bottom: 30px;  
+    }
+    @media (max-width: 376px) {        
+        margin-bottom: 19px;
+        margin-left: 18px;
+        margin-top: -9px;
+    }
+}
+.animation .breadcrumbs__disable { 
+    @media (max-width: 376px) {   
+        margin-left: -13px;
+        margin-top: -2px;       
+    }
+}

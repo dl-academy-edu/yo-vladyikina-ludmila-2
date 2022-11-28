@@ -1,0 +1,447 @@
+.contact {
+    &__title {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 41px;
+        line-height: 49px;
+        text-transform: uppercase;
+        color: $text-color;
+        margin-top: 56px;
+        margin-bottom: 14px;
+    
+        @media (max-width: 1270px) {
+            font-size: 36px;
+            line-height: 44px;
+            margin-left: 63px;
+            margin-top: 34px;
+        }
+        @media (max-width: 670px) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-left: 18px;
+        }
+    }
+    .contact__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        @media (max-width: 1270px) {
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            align-items: center;
+        }
+        @media (max-width: 670px) {       
+            padding-bottom: 50px;      
+        }
+    }
+}
+
+.contact input, 
+.contact textarea {
+    background: $secondary;
+    border: 1px solid $color-disable;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+    padding: 14px 20px 11px 20px;
+    resize: none;  
+    outline: none;      
+}
+
+.contact input:hover, 
+.contact textarea:hover,
+.contact input:active, 
+.contact textarea:active {
+    background: $secondary;
+    border: 1px solid $color-hover;      
+} 
+
+.contact input:disabled, 
+.contact textarea:disabled {
+    background: $secondary;
+    border: 1px solid #EBEBEB;    
+}
+
+.contact textarea {
+    max-height: 150px;
+}
+
+.contact label,
+.contact .label__wrapper span {    
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;   
+}
+
+.contact .label {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 17px;
+        margin-right: 18px;
+    }
+    &__name {
+        margin-top: -25px;
+        margin-left: -2px;
+        @media (max-width: 1270px) {       
+            margin-left: 15px;
+            margin-top: -26px;
+        }     
+        @media (max-width: 670px) {       
+            margin-left: -18px;
+            margin-top: -44px;
+        }      
+    }
+    &__phone {
+        margin-left: -2px;
+        @media (max-width: 1270px) {               
+            margin-left: 16px;
+        }  
+        @media (max-width: 670px) {               
+            margin-left: -19px;
+            margin-top: -4px;
+        }  
+    } 
+    &__email {        
+        @media (max-width: 1270px) {       
+            margin-left: -14px;
+            margin-top: 2px;
+        }
+        @media (max-width: 670px) {       
+            margin-left: -18px;
+            margin-top: -4px;
+        }
+    } 
+    &__message {
+        margin-top: 3px;
+        margin-left: -2px;
+        @media (max-width: 1270px) {
+            margin-left: 16px;
+            margin-top: 1px;
+        } 
+        @media (max-width: 670px) {
+            margin-left: -18px;
+            margin-top: -4px;
+        }    
+    }
+}
+
+
+.contact input {
+    margin-left: -3px;   
+}
+
+.contact .input {
+    &__name {
+        width: 600px;
+        @media (max-width: 1270px) {
+            font-size: 16px;
+            line-height: 19px;
+            margin-left: 15px;
+            margin-top: 4px;
+            width: 536px;
+        }    
+        @media (max-width: 670px) {
+            font-size: 14px;
+            height: 42px;
+            line-height: 16px;
+            margin-left: -17px;
+            margin-top: 3px;
+            width: 285px;
+        }            
+    }
+    &__phone {
+        margin-left: -2px;
+        margin-right: 21px;
+        width: 290px;   
+        @media (max-width: 1270px) {
+            width: 258px;
+            margin-left: 15px;
+            margin-top: 2px;
+        } 
+        @media (max-width: 670px) {   
+            height: 41px;
+            margin-left: -17px;
+            margin-top: 4px;
+            width: 285px;
+        }   
+    }
+    &__email {        
+        width: 290px;
+        @media (max-width: 1270px) {
+            margin-left: -14px;           
+            width: 258px;
+        }  
+        @media (max-width: 670px) {   
+            height: 41px;           
+            width: 285px;
+        }     
+    }
+    &__message {
+        margin-top: 3px;
+        margin-left: -3px;
+        margin-bottom: 7px;
+        width: 600px;
+        @media (max-width: 1270px) {
+            margin-left: 15px;
+            margin-top: 4px;
+            width: 536px;
+        }    
+        @media (max-width: 670px) {
+            margin-left: -17px;
+            margin-top: 5px;
+            width: 285px;
+        }    
+    }
+}
+
+.contact .field-2-column{
+    display: flex;
+    justify-content: space-between;   
+    @media (max-width: 670px) {
+        flex-wrap: wrap;
+    }        
+}
+  
+.contact .field-2-column .contact .label__wrapper {
+    width: 290px;   
+}
+   
+.contact .consent {
+    margin-left: -5px;
+
+    @media (max-width: 1270px) {        
+        margin-left: 14px;
+    }     
+    @media (max-width: 670px) {        
+        margin-left: -16px;
+        margin-top: -9px;
+    }
+}     
+
+.contact .checkbox {
+    &__input {
+        display: none;   
+    }
+    &__label {
+        position: relative;
+        cursor: pointer;    
+        padding-left: 36px;     
+    
+        @media (max-width: 1270px) {        
+            margin-right: -53px;
+            margin-top: -3px;
+            padding-left: 35px;
+        }
+        @media (max-width: 670px) {
+            padding-left: 27px;
+            margin-right: -67px;             
+        }
+        &::before,
+        &::after {
+            content:'';
+            position: absolute;
+            display: block;   
+        }
+        &::before,
+        &::after {
+            content:'';
+            position: absolute;
+            display: block;   
+        }
+        &::before {   
+            width: 19px;
+            height: 19px;     
+            border: 2px solid $color-hover;
+            background: $secondary;
+            border-radius: 3px; 
+            top: -3px;
+            left: 0;
+
+            @media (max-width: 670px) {
+                width: 14px;
+                height: 14px;
+                top: 1px;
+                left: -2px;
+            }
+        }
+        &::after {
+            width: 14px;
+            height: 14px;     
+            background-image: url('../img/checkbox.svg'); 
+            top: 0px;
+            left: 4px;
+            opacity: 0;
+
+            @media (max-width: 670px) {
+                width: 13px;
+                height: 13px;
+                background-image: url('../img/checkbox-mobile.svg');
+                top: 1px;
+                left: 1px;
+            } 
+        } 
+        &:hover,
+        &:active {
+            text-decoration-line: underline;    
+            color: $text-color;
+        }
+    }
+}
+
+.contact .checkbox__input:checked + .contact .checkbox__label::after {
+    opacity: 1;
+}
+
+.contact .checkbox__input:disabled + .contact .checkbox__label,
+.contact .checkbox__input:disabled + .contact .checkbox__label::before {
+    color: #908484;  
+    text-decoration-line: none;  
+    cursor: none;   
+}
+
+.help {
+    margin-left: 43px;
+    margin-top: -16px;
+    @media (max-width: 1270px) {        
+        margin: 0 auto;
+        padding-bottom: 47px;
+        padding-left: 0;
+        padding-top: -6px;
+        text-align: center;     
+    }
+    span {
+        font-family: $secondary-font;    
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: $color-hover;  
+
+        @media (max-width: 1270px) {     
+            margin-left: 20px;
+        }  
+        @media (max-width: 670px) {     
+            font-size: 25px;
+            line-height: 34px;
+            margin-left: 25px;
+            margin-right: -13px;
+        }  
+    }
+    &__text1 {
+        @media (max-width: 1270px) {        
+            width: 75%;
+            margin-left: 104px;
+        }
+        @media (max-width: 670px) {        
+            font-size: 14px;
+            line-height: 19px;    
+            margin-left: 22px;
+            margin-top: -3px;
+            width: 92%;
+        }
+    }
+    &__text2 {
+        margin-top: 19px;
+        margin-bottom: 19px;
+        @media (max-width: 1270px) {  
+            margin-left: 120px;
+            width: 71%;
+        }
+        @media (max-width: 670px) {        
+            font-size: 14px;
+            line-height: 19px;
+            margin-left: 21px;
+            margin-top: 1px;
+            width: 92%;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.contact__form .button {
+    @media (max-width: 1270px) {        
+        margin-left: 15px;
+        margin-top: 2px;
+    }      
+    @media (max-width: 670px) {   
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: -18px;
+        margin-top: -2px;
+    }      
+}
+
+.contact .breadcrumbs__next-2 {
+    display: none;
+}
+
+.contact .breadcrumbs {
+    @media (max-width: 1270px) {        
+        margin-left: 63px;
+        margin-top: -5px;
+    }  
+    @media (max-width: 670px) {        
+        margin-left: 19px;
+        margin-top: -3px;
+    }
+}  
+
+.contact .breadcrumbs__disable {
+    @media (max-width: 670px) {        
+        margin-left: -14px;
+        margin-top: -1px;
+    }
+}
+
+
+
+
+.contact {
+    &__form {
+        width: 680px;
+        background: #E5EAF8;
+        padding: 67px 42px 53px 42px;
+        position: relative;
+        margin-right: 75px;
+        margin-bottom: 2px;
+        @media (max-width: 1270px) {
+            margin-left: 60px;
+            order: 1;
+            width: 648px;
+            margin-bottom: -63px;
+        }
+        @media (max-width: 670px) {
+            height: 555px;
+            margin-top: -19px;
+            width: 335px;
+            margin-bottom: -61px;
+            margin-left: 74px;
+        }
+    }
+    &__close {
+        border: none;
+        background: transparent;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer; 
+        background: #E5EAF8;
+        transform: rotate(90deg); 
+
+        &:hover {
+            background: rgba(240, 240, 240, 0.7);
+            transform: rotate(90deg);
+        }
+        &:active {
+        background: rgba(240, 240, 240, 0.4);
+        transform: rotate(90deg) 
+        } 
+    }
+}
+
+
+

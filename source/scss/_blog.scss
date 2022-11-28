@@ -1,0 +1,163 @@
+.blog {
+    &__title {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: $text-color;
+
+        @media (max-width: 1230px) {
+            font-size: 36px;
+            line-height: 44px;
+            margin-left: 60px;
+            margin-top: 34px;
+        }
+        @media (max-width: 376px) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-left: 20px;
+            margin-top: 12px;
+        }
+    }
+    &__link 
+        li {
+        width: 380px;  
+        margin-right: 10px;
+        margin-bottom: 10px;
+    
+        @media (max-width: 835px) {
+            margin-bottom: 10px;
+            margin-right: 19px;
+            width: 314px;
+        }
+        @media (max-width: 376px) {       
+            width: 335px;
+        }
+        p {
+            color: #818181;
+
+            @media (max-width: 769px) {       
+                margin-left: -3px;
+                margin-top: 8px;
+            }
+            @media (max-width: 376px) { 
+                font-size: 14px;
+                line-height: 16px;
+                margin-left: 0px;
+                margin-top: 5px;
+            }
+        }
+        h2 {
+            font-family: $secondary-font;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 31px;
+            color: $text-color;
+            width: 80%;
+
+            @media (max-width: 769px) {       
+                margin-left: 0px;
+                margin-top: -13px;
+                width: 100%;        
+            }
+            @media (max-width: 376px) {  
+                font-size: 18px;
+                line-height: 22px;
+                margin-left: 1px;
+                margin-top: -9px;
+                width: 100%;
+            }
+        }
+        h2:hover,
+        h2:active {
+            text-decoration-line: underline;
+        }    
+        span {    
+            display: block;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: $text-color;
+            width: 90%;
+            @media (max-width: 769px) {        
+                width: 100%;
+                margin-top: -10px;
+                margin-bottom: 14px;       
+            }
+            @media (max-width: 376px) {   
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 14px;
+                margin-top: -8px;
+                width: 100%;
+                margin-left: 2px;    
+            }
+        }
+        li:nth-child(3n) {     
+            @media (max-width: 769px) {        
+                margin-right: 19px;        
+            }
+        }
+        img {
+            background: #7D97DA33;
+        }
+    }
+}
+
+.blog__wrapper .row {
+    padding-left: 0%;    
+    margin-right: -11px;
+
+    @media (max-width: 1195px) {
+        padding-left: 8%;
+        padding-right: 3%;
+        margin-bottom: -24px;
+    }
+    @media (max-width: 881px) {
+        padding-left: 7%;
+        padding-right: 3%;
+        margin-bottom: -24px;
+    }
+    @media (max-width: 871px) {
+        padding-left: 6%;
+        padding-right: 0%;
+        margin-bottom: -24px;
+    }
+    @media (max-width: 835px) {
+        padding-left: 5%;
+        padding-right: 0%;
+        margin-bottom: -24px;
+    }
+    @media (max-width: 376px) {      
+        margin-bottom: -28px;
+        padding-left: 8%;
+        padding-right: 3%;
+    }
+}
+
+.blog .breadcrumbs__next-2 {
+    display: none;
+}
+
+.blog .breadcrumbs {
+    @media (max-width: 1230px) {        
+        margin-left: 60px;
+        margin-top: -21px;
+        margin-bottom: 30px;  
+    }
+    @media (max-width: 376px) {        
+        margin-bottom: 19px;
+        margin-left: 18px;
+        margin-top: -9px;
+    }
+}
+
+.blog .breadcrumbs__disable { 
+    @media (max-width: 376px) {   
+        margin-left: -13px;
+        margin-top: -2px;       
+        
+    }
+}
+

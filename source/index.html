@@ -1,40 +1,163 @@
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
+<!DOCTYPE html>
+<html lang="en">
 
-    <title>DL Academy</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Designe Life Kids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap"
+		rel="stylesheet">     
+    <link rel="stylesheet" href="css/style.css">        
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta name="desciption" content="Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.">
+    <meta name="keywords" content="toys for kids, apparel kids, holiday shop, accesseories">
+</head>
+<body>
+    
+    @@include('blocks/header.html')
 
-    <script>
-      var docElement = document.documentElement;
-      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
-    </script>
-
-    <!-- Favicon -->
-
-    <!-- build:css -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!-- endbuild -->
-  </head>
-  <body>
-    <div class="wrapper">
-      <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
-        </div>
-      </main>
-      @@include('blocks/footer.html')
-    </div>
-
-    <script src="js/app.js" defer></script>
-  </body>
+    <main class="container">       
+        <section class="banner">  
+            <div class="banner__wrapper">  
+                <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
+                <p class="banner__text">Designed in Slovenia</p>
+                @@include('blocks/button.html', {
+                    "class": "banner__link button banner-js",
+                    "type": "button",
+                    "text": "EXPLORE NOW"
+                })
+                <picture>
+                    <source srcset="img/monster/monster-mobile_1x.png 1x, img/monster/monster-mobile_2x.png 2x" media="(max-width: 450px)">
+                    <source srcset="img/monster/monster-tablet_1x.png 1x, img/monster/monster-tablet_2x.png 2x" media="(max-width: 1265px)">
+                    <source srcset="img/monster/monster_1x.png 1x, img/monster/monster_2x.png 2x">
+                    <img src="img/monster/monster_1x.png" alt="monster" class="banner__monster-img"> 
+                </picture>                
+            </div>             
+            <span class="numbers">01</span>
+            <div class="banner__buttons">               
+                <button type="button" class="banner__button_active"></button>
+                <button type="button" class="banner__button"></button>
+                <button type="button" class="banner__button"></button>
+                <button type="button" class="banner__button"></button>
+            </div> 
+        </section>                                                                        
+            <div class="banner__botton">      
+                <p class="text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+            </div>  
+            <audio class="audio" loop controls>
+                <source src="https://cdn.drivemusic.me/dl/online/SAjf8gXzNsj7z5PK5yFApg/1664433940/download_music/2020/03/fausto-papetti-more.mp3" type="audio/mp3">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>                     
+            <section class="products">
+                <h2 class="products__title">Category Products</h2>
+                
+                    <ul class="products__list underline row">
+                        <li class="products__cards col-xl-3 col-lg-4">
+                            <a href="#">APPAREL KIDS</a>
+                        </li>
+                        <li class="products__cards col-xl-3 col-lg-4">
+                            <a href="#">HOLIDAY SHOP</a>
+                        </li>
+                        <li class="products__cards col-xl-3 col-lg-4">
+                            <a href="toys.html">TOYS</a>
+                        </li>
+                        <li class="products__cards col-xl-3 col-lg-4">
+                            <a href="#">ACCESSORIES</a>
+                        </li>
+                    </ul>
+               
+                <div class="products__pages">
+                    <button type="button" class="button__control_one"></button>  
+                    <button type="button" class="button__control_two"></button>         
+                    <p class="products__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to
+                        furniture for kids and adults.</p>
+                </div>             
+            </section>
+            <section class="delivery">  
+                <picture>
+                    <source srcset="img/woman/woman-mobile_1x.jpg 1x, img/woman/woman-mobile_2x.jpg 2x" media="(max-width: 560px)">
+                    <source srcset="img/woman/woman-tablet_1x.jpg 1x, img/woman/woman-tablet_2x.jpg 2x" media="(max-width: 1060px)">
+                    <source srcset="img/woman/woman_1x.jpg 1x, img/woman/woman_2x.jpg 2x">
+                    <img class="delivery__image" src="img/woman/woman_1x.jpg" alt="woman">   
+                </picture>                
+                                      
+                <div class="delivery__list">   
+                    <h2 class="delivery__title">Delivery</h2>                
+                    <ul class="delivery__links underline">
+                        <li>
+                            <a class="delivery__link" href="#">Delivery</a>
+                        </li>
+                        <li>
+                            <a class="delivery__guarantee" href="#">Guarantee</a>
+                        </li>
+                        <li>
+                            <a class="delivery__creadit" href="#">Credit</a>
+                        </li>
+                    </ul>           
+                    <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
+                        completely shocked that four years have flown by. It's simply magical.</p>
+                    <p class="delivery__texts">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy
+                        place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                    @@include('blocks/link.html', {
+                        "href": "#",
+                        "class": "button",
+                        "text": "LEARN MORE",
+                        "type": "button"
+                    })
+                               
+                </div>                           
+            </section>
+        <section class="company">            
+            <h2 class="company__title">Company</h2>
+            <ul class="company__list underline">
+                <li>
+                    <img class="company__image" src="img/company/company1.png" alt="company1">
+                </li>
+                <li>
+                    <img class="company__image" src="img/company/company2.png" alt="company2">
+                </li>
+                <li>
+                    <img class="company__image" src="img/company/company3.png" alt="company3">
+                </li>
+                <li>
+                    <img class="company__image" src="img/company/company4.png" alt="company4">
+                </li>
+            </ul>      
+            
+        </section>
+        <section class="information">
+                <div class="information__about">
+                    <h2 class="information__title">Design Life Kids</h2>
+                    <p class="information__list">About Us</p>
+                    <p class="information__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
+                        completely shocked that four years have flown by. It's simply magical. </p> 
+                    @@include('blocks/link.html', {
+                        "href": "#",
+                        "class": "button",
+                        "text": "buy now",
+                        "type": "button"
+                    })
+                                   
+                </div>
+                <div class="information__about">                    
+                    <h2 class="about__title">Contacts</h2>
+                    <p class="about__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am
+                        completely shocked that four years have flown by. It's simply magical.</p>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A22f875fc396be51d1edb5f7f55b5e94a567b00a754899ae6ab4e7ba2d6a61f40&amp;source=constructor" class="map">
+                    </iframe>
+                    
+               </div>          
+        </section>
+         @@include('blocks/popup.html')  
+        
+    </main>
+    @@include('blocks/footer.html')   
+    <script src="js/menu.js"></script>
+    <script src="js/app.js"></script> 
+    
+</body>
 </html>
